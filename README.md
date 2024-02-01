@@ -1,2 +1,0 @@
-# exoweb
-Exocet's website
