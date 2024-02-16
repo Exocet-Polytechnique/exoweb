@@ -1,8 +1,57 @@
 .navBar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 0 20px;
-    background-color: #f4f4f4;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    padding: 1% 20px;
+    background-color: rgba(193, 39, 54, 1);
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    margin-left: 10px;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleBlock > img {
+    height: 65px;
+    width: auto;
+    transform: scaleX(-1);
+}
+
+.titleBlock > div {
+    font-weight: bold;
+    font-size: 65px;
+}
+
+.title > div {
+    font-weight: 550;
+    font-size: 15px;
+    letter-spacing: 0.1cap;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 70%;
 }
