@@ -26,7 +26,6 @@
 .titleBlock > img {
     height: 65px;
     width: auto;
-    transform: scaleX(-1);
 }
 
 .titleBlock > div {
@@ -40,7 +39,7 @@
     letter-spacing: 0.1cap;
 }
 
-.links a {
+.page-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     font-size: 22px;
@@ -53,5 +52,6 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: center;
     max-width: 70%;
 }

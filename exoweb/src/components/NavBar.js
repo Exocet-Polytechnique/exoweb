@@ -1,7 +1,8 @@
 import React from "react";
 import './NavBar.css';
 import { Link } from "react-router-dom";
-import fishImage from '../img/poissonexocetblanc.png'
+import Dropdown from "../components/Dropdown"; // Import the Dropdown component
+import fishImage from '../img/poissonexocet.svg'
 
 function NavBar() {
   return (
@@ -14,11 +15,11 @@ function NavBar() {
         <div>Toujours plus loin, toujours plus vite</div>
       </div>
       <div className="links">
-        <Link to="/">Accueil</Link>
-        <Link to="/team">Nos équipes</Link>
-        <Link to="/">Commanditaires</Link>
-        <Link to="/">Gallerie</Link>
-        <Link to="/">Nous rejoindre</Link>
+        <Link to="/" className="page-link">Accueil</Link>
+        <Dropdown className="nav-dropdown"></Dropdown>
+        <Link to="/" className="page-link">Commanditaires</Link>
+        <Link to="/" className="page-link">Galerie</Link>
+        <Link to="/" className="page-link">Nous rejoindre</Link>
       </div>
       
     </div>

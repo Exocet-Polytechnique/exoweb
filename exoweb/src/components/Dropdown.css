@@ -1,0 +1,51 @@
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgba(193, 39, 54, 1); 
+}
+
+.dropdown-container a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    letter-spacing: 0.1cap;
+    margin-right: 20px;
+    background-color: rgba(193, 39, 54, 1); 
+    padding: 3px 30px;
+}
+
+.dropdown-container a::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 60px;
+    height: 1px;
+}
+
+.dropdown-container a:last-child {
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 5px;
+}
+
+.dropdown-container a:last-child::after {
+    content: none;
+}
+
+.dropdown-container {
+    position: absolute;
+    top: calc(90%);
+}
+
