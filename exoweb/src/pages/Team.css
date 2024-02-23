@@ -1,0 +1,29 @@
+.team-page {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(193, 39, 54, 1);
+    overflow-y: scroll;
+}
+
+.team-header {
+    font-weight: bold;
+    font-size: 45px;
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    z-index: 100;
+}
+
+.team-subtitle {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}

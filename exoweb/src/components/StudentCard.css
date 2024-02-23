@@ -1,0 +1,55 @@
+.student-card {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(55, 75, 87, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px 20px;
+    width: 170px;
+}
+
+.student-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.student-title {
+    margin-top: 3px;
+}
+
+.student-card > div {
+    background-color: rgba(55, 75, 87, 1);
+    height: 191px;
+    width: 150px;
+}
+
+.student-title, .student-name {
+    overflow: auto;
+    margin-bottom: 0px;
+    z-index: 100;
+}
+
+.description-cover {
+    background-color: rgba(193, 39, 54, 1);
+    width: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
+.picture-container {
+    position: relative;
+}
+
+.description-text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    max-width: 140px;
+}
