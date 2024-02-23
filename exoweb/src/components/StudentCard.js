@@ -20,23 +20,18 @@ function StudentCard(props) {
     setIsRising(true);
     setVisible(true);
     for (var i = height; i <= maxHeight ; i++) {
-      setHeight(i);
-      await timeout(2);
+        setHeight(i);
+        await timeout(2);      
     }
     setIsRising(false);
   }
 
   const handleMouseLeave = async () => {
-    if (rising) {
-      return;
-    }
-    setIsRising(true);
     for (var i = height; i > 0 ; i--) {
       setHeight(i);
       await timeout(2);
     }
     setVisible(false);
-    setIsRising(false);
   }
 
   return (
