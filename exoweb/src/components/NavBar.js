@@ -7,13 +7,15 @@ import fishImage from '../img/poissonexocet.svg'
 function NavBar() {
   return (
     <div className="navBar">
-      <div className="title">
+      <a href="/" className="title" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div>
         <div className="titleBlock">
           <img src={fishImage} alt="logo de exocet"></img>
           <div>EXOCET</div>
         </div>
-        <div>Toujours plus loin, toujours plus vite</div>
+        <p className="">Toujours plus loin, toujours plus vite</p>
       </div>
+      </a>
       <div className="links">
         <Link to="/" className="page-link">Accueil</Link>
         <Dropdown className="nav-dropdown"></Dropdown>
