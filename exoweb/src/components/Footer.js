@@ -8,12 +8,12 @@ import linkedinLogo from '../img/linkedin.svg';
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <Link to="/"><img src={instagramLogo} alt="logo de instagram" className="linkLogo"/></Link>
       <Link to="/"><img src={facebookLogo} alt="logo de facebook" className="linkLogo"/></Link>
       <Link to="/"><img src={linkedinLogo} alt="logo de linkedin" className="linkLogo"/></Link>
       <Link to="/"><img src={githubLogo} alt="logo de github" className="linkLogo"/></Link>
-    </div>
+    </footer>
   )
 }
 

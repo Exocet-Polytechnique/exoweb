@@ -1,0 +1,14 @@
+.homepage {
+    background-color: rgb(41, 67, 71);
+    overflow-y: scroll;
+}
+
+.header {
+    color: rgba(193, 39, 54, 1);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}

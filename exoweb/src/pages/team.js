@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar"; // Import the NavBar component
-import Footer from "../components/Footer"; // Import the Footer component
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import StudentCard from "../components/StudentCard";
-import "./Team.css"
+import "./team.css"
 
 function Team() {
     return (
@@ -38,7 +38,7 @@ function Team() {
                     <StudentCard name="*nom*" title="*titre*"></StudentCard>
                     <StudentCard name="*nom*" title="*titre*"></StudentCard>
                     <StudentCard name="*nom*" title="*titre*"></StudentCard>
-                </div> 
+                </div>
             </div>
             <Footer/> {/* Add the Footer component */}
         </div>
