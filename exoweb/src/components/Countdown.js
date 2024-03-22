@@ -28,7 +28,7 @@ function Countdown() {
   return (
     <div className="countdown">
       <div className="countdown-div">
-        <div className="countdown-title">Décompte pour Monaco</div>
+        <div className="countdown-title">Décompte avant Monaco</div>
         <div className="values-div">
           <div className="countdown-values">
             <p className="values-text">{days}</p>
