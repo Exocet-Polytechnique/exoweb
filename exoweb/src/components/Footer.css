@@ -7,10 +7,9 @@
     background-color: rgba(193, 39, 54, 1);
     height: 105px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    position: relative;
 }
 
 .linkLogo {

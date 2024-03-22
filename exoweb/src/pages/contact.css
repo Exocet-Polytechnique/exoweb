@@ -3,10 +3,12 @@
     overflow-y: scroll;
 }
 
-.homepage-wave {
-    width: 100%;
-    position: relative;
-    left: 0;
-    margin-top: 300px;
-    margin-bottom: 600px;
+.header {
+    color: rgba(193, 39, 54, 1);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
 }

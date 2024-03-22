@@ -4,12 +4,6 @@ import './Dropdown.css';
 
 function Dropdown() {
   const [hovered, setHovered] = useState(false);
-  // const [clicked, setClicked] = useState(false);
-
-  // const toggleDropdown = () => {
-  //   setClicked(!clicked);
-  // }
-
   const handleMouseEnter = () => {
     setHovered(true);
   }
@@ -17,7 +11,7 @@ function Dropdown() {
   const handleMouseLeave = () => {
     setHovered(false);
   }
- 
+
   return (
     <div className="team-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Link to="/Homepage" className="page-link">Nos Équipes</Link>
