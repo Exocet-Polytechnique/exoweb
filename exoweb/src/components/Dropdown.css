@@ -47,5 +47,6 @@
 .dropdown-container {
     position: absolute;
     top: calc(90%);
+    margin-top: 5px;
 }
 

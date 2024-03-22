@@ -6,15 +6,14 @@
     flex-wrap: nowrap;
     display: inline-block;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: bolder;
 }
 
 .countdown-title {
-    font-weight: 550;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .values-div {
@@ -38,6 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.1cap;
 }
 
 .values-div > span {

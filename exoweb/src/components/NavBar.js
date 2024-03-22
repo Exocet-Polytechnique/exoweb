@@ -15,7 +15,7 @@ function NavBar() {
         <div>Toujours plus loin, toujours plus vite</div>
       </div>
       <div className="links">
-        <Link to="/" className="page-link">Accueil</Link>
+        <Link to="/Homepage" className="page-link">Accueil</Link>
         <Dropdown className="nav-dropdown"></Dropdown>
         <Link to="/" className="page-link">Commanditaires</Link>
         <Link to="/" className="page-link">Galerie</Link>

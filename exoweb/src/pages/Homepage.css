@@ -1,3 +1,21 @@
 .homepage {
-    background-color: rgb(174, 203, 207);
+    background-color: rgb(41, 67, 71);
+    overflow-y: scroll;
+}
+
+.peepee {
+    height: 5000px;
+}
+
+.countdown-container {
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.homepage-wave {
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: 300px;
+    margin-bottom: 600px;
 }
