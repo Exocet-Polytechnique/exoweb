@@ -8,7 +8,7 @@ function Team() {
     return (
         <div className="team-page">
             <NavBar/> {/* Add the NavBar component */}
-            <p className="team-header">Équipe 20xx</p>
+            <p className="team-header">Équipe 2023-2024</p>
             <div className="member-type-container">
                 <p className="team-subtitle">Exécutif</p>
                 <div className="cards-container">
@@ -40,7 +40,7 @@ function Team() {
                     <StudentCard name="*nom*" title="*titre*"></StudentCard>
                 </div> 
             </div>
-            <Footer/> 
+            <Footer/> {/* Add the Footer component */}
         </div>
     )
 }

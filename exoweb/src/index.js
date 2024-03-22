@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
 import Team from './pages/Team';
+import Homepage from './pages/Homepage';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: 'team',
     element: <Team />
+  },
+  {
+    path: 'homepage',
+    element: <Homepage />
   },
 ]);
 
