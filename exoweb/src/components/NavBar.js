@@ -6,7 +6,7 @@ import fishImage from '../img/poissonexocet.svg'
 
 function NavBar() {
   return (
-    <div className="navBar">
+    <head className="navBar">
       <a href="/" className="title" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div>
         <div className="titleBlock">
@@ -23,8 +23,7 @@ function NavBar() {
         <Link to="/gallery" className="page-link">Galerie</Link>
         <Link to="/contact" className="page-link">Nous rejoindre</Link>
       </div>
-
-    </div>
+    </head>
   )
 }
 
