@@ -1,21 +1,142 @@
-.homepage {
-    background-color: rgb(41, 67, 71);
-    overflow-y: scroll;
+.sponsors-page {
+    overflow: auto;
+    overflow-x: hidden;
+    color: rgba(193, 39, 54, 1);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.peepee {
-    height: 5000px;
+.sponsors-header {
+    font-weight: bold;
+    font-size: 45px;
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    z-index: 100;
 }
 
-.countdown-container {
-    margin-top: 60px;
-    margin-left: 60px;
-}
-
-.homepage-wave {
-    width: 100%;
+.sponsors-subtitle {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    z-index: 100;
     position: relative;
+}
+
+button {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(193, 39, 54, 1);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1cap;
+    margin: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.document-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-symbol {
+    height: 22px;
+}
+
+#brick, #ketch, #sloop {
+    float: left;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#corte, #goelette {
+    float: right;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#ketch {
+    margin-top: -40px;
+}
+
+#corte {
+    margin-top: -30px;
+}
+
+#sloop {
+    margin-bottom: 100px;
+}
+
+.sponsor-cards {
+    display: block;
+    margin-top: 50px;
+}
+
+.sponsor-title {
+    font-weight: bold;
+    font-size: 45px;
+    z-index: 150;
+    position: absolute;
+}
+
+#brick .sponsor-title {
+    transform: rotate(-25deg);
     left: 0;
-    margin-top: 300px;
-    margin-bottom: 600px;
+    margin-left: 100px;
+}
+
+#goelette .sponsor-title {
+    transform: rotate(16deg);
+    top: -70px;
+    margin-right: 20px;
+}
+
+#ketch .sponsor-title {
+    transform: rotate(23deg);
+    left: 0;
+    top: -40px;
+    margin-left: 120px;
+}
+
+#corte .sponsor-title {
+    transform: rotate(-30deg);
+    top: -5px;
+    margin-right: 150px;
+}
+
+#sloop .sponsor-title {
+    transform: rotate(10deg);
+    left: 0;
+    top: -80px;
+    margin-left: 210px;
+}
+
+.sponsor-vector {
+    position: relative;
+    margin-bottom: -200px;
+}
+
+@media (max-width: 1400px) {
+    .sponsor-vector {
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sponsor-vector {
+        margin-bottom: 50px;
+    }
 }

@@ -1,6 +1,6 @@
 .homepage {
     background-color: rgb(41, 67, 71);
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 .peepee {
