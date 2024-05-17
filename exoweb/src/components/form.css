@@ -59,7 +59,7 @@ input[type=text]::placeholder, .message-placeholder {
 	resize: none;
 	overflow-y: auto;
 	position: relative;
-	padding: 0.6em 0.6em 0.6em 0.6em;
+	padding: 0.7em 0.7em 0.7em 1em;
 }
 
 .input-message::-webkit-scrollbar-track {
