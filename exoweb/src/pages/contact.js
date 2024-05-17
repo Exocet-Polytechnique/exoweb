@@ -2,16 +2,17 @@ import "./contact.css"
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import Form from "../components/form";
+import Form from "../components/Form";
 
 function Contact() {
     return (
-        <div>
+        <div className="contact-page">
             <NavBar/>
-            <body>
-            <Form/>
+            <p className="contact-header">Écrivez-nous!</p>
+            <body className="main-content">
+                <Form/>              
             </body>
-            <Footer/>
+            <Footer className="contact-footer"/>
         </div>
     )
 }

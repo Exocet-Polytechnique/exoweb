@@ -19,3 +19,16 @@
     margin-top: 300px;
     margin-bottom: 600px;
 }
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(55, 75, 87, 1);
+	border-radius: 40px;
+}
