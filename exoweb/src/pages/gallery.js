@@ -7,8 +7,9 @@ function Gallery() {
     return (
         <div>
             <NavBar/>
-            <body>
-
+            <body className="gallery-page">
+                <p className="gallery-header">Notre galerie</p>
+                <p className="gallery-subtitle">2023</p>
             </body>
             <Footer/>
         </div>

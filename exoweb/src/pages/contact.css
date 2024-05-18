@@ -1,14 +1,34 @@
-.homepage {
-    background-color: rgb(41, 67, 71);
-    overflow-y: scroll;
+body {
+    height: 100%;
+    margin: 0;
 }
 
-.header {
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     color: rgba(193, 39, 54, 1);
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
 
+.contact-header {
+    font-weight: bold;
+    font-size: 45px;
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    z-index: 100;
+}
+
+.contact-footer {
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
 }

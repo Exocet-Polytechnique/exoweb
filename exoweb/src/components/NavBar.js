@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <head className="navBar">
       <a href="/" className="title" style={{ textDecoration: 'none', color: 'inherit' }}>
-      <div>
+      <div className="title-group">
         <div className="titleBlock">
           <img src={fishImage} alt="logo de exocet"></img>
           <div>EXOCET</div>
