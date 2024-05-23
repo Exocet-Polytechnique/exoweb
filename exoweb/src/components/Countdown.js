@@ -10,7 +10,7 @@ function Countdown() {
   useEffect(() => {
     const interval = setInterval(() => {
       const currentDate = new Date();
-      const monacoDate = new Date("6 June, 2024");
+      const monacoDate = new Date("29 June, 2024");
       const totalSeconds = (monacoDate - currentDate) / 1000;
 
       setDays(format(Math.floor(totalSeconds / 3600 / 24)));
