@@ -9,10 +9,10 @@ import linkedinLogo from '../img/linkedin.svg';
 function Footer() {
   return (
     <footer className="footer">
-      <Link to="/"><img src={instagramLogo} alt="logo de instagram" className="linkLogo"/></Link>
-      <Link to="/"><img src={facebookLogo} alt="logo de facebook" className="linkLogo"/></Link>
-      <Link to="/"><img src={linkedinLogo} alt="logo de linkedin" className="linkLogo"/></Link>
-      <Link to="/"><img src={githubLogo} alt="logo de github" className="linkLogo"/></Link>
+      <Link to="https://www.instagram.com/exocet_polymtl/"><img src={instagramLogo} alt="logo de instagram" className="linkLogo"/></Link>
+      <Link to="https://www.facebook.com/ExocetPoly/"><img src={facebookLogo} alt="logo de facebook" className="linkLogo"/></Link>
+      <Link to="https://ca.linkedin.com/company/exocet-polytechnique-montr%C3%A9al"><img src={linkedinLogo} alt="logo de linkedin" className="linkLogo"/></Link>
+      <Link to="https://github.com/Exocet-Polytechnique"><img src={githubLogo} alt="logo de github" className="linkLogo"/></Link>
     </footer>
   )
 }
