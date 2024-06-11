@@ -2,12 +2,12 @@ import "./sponsors.css"
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import downloadLogo from '../img/download_symbol.svg';
-import brick from '../img/vec_brick.svg';
-import corte from '../img/vec_corte.svg';
-import goelette from '../img/vec_goelette.svg';
-import ketch from '../img/vec_ketch.svg';
-import sloop from '../img/vec_sloop.svg';
+import downloadLogo from '../img/misc/download_symbol.svg';
+import brick from '../img/misc/vec_brick.svg';
+import corte from '../img/misc/vec_corte.svg';
+import goelette from '../img/misc/vec_goelette.svg';
+import ketch from '../img/misc/vec_ketch.svg';
+import sloop from '../img/misc/vec_sloop.svg';
 
 function Sponsors() {
     return (

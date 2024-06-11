@@ -2,7 +2,7 @@ import React from "react";
 import './NavBar.css';
 import { Link } from "react-router-dom";
 import Dropdown from "../components/Dropdown"; // Import the Dropdown component
-import fishImage from '../img/poissonexocet.svg'
+import fishImage from '../img/misc/poissonexocet.svg'
 
 function NavBar() {
   return (

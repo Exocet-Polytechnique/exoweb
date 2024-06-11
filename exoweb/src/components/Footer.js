@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.css';
-import facebookLogo from '../img/facebook.svg';
-import githubLogo from '../img/github.svg';
-import instagramLogo from '../img/instagram.svg';
-import linkedinLogo from '../img/linkedin.svg';
+import facebookLogo from '../img/misc/facebook.svg';
+import githubLogo from '../img/misc/github.svg';
+import instagramLogo from '../img/misc/instagram.svg';
+import linkedinLogo from '../img/misc/linkedin.svg';
 
 function Footer() {
   return (

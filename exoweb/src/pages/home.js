@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Countdown from "../components/Countdown";
-import wave from '../img/wave_homepage.svg';
+import wave from '../img/misc/wave_homepage.svg';
 
 function Home() {
     return (

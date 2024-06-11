@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import './StudentCard.css';
 
 function StudentCard(props) {
+  const image = props.image;
+  const bio = props.bio;
   const name = props.name;
   const title = props.title;
   const [visible, setVisible] = useState(false);
@@ -21,7 +23,7 @@ function StudentCard(props) {
     setVisible(true);
     for (var i = height; i <= maxHeight ; i++) {
         setHeight(i);
-        await timeout(2);      
+        await timeout(2);
     }
     setIsRising(false);
   }
@@ -34,18 +36,18 @@ function StudentCard(props) {
     setVisible(false);
   }
 
-  return (
-    <div className="student-card">
-      <div className="picture-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className="temporary-picture"></div>
-        {visible && <div className="description-cover" style={{height, top: `calc(100% - ${height}px)`}}>
-          <p className="description-text" style={{height: "75%"}}>so long as you remember who you used to be. i wont forget not one word of this, not ever. i will always remember, when the doctor was me.</p>
-        </div>}
-      </div>
-      <p className="student-name">{name}</p>
-      <p className="student-title">{title}</p>     
-    </div>
-  )
+    return (
+        <div className="student-card">
+            <div className="picture-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <img src={image} alt="Student Image" className="picture-container" />
+                {visible && <div className="description-cover" style={{height, top: `calc(100% - ${height}px)`}}>
+                    <p className="description-text" style={{height: "75%"}}>{bio}</p>
+                </div>}
+            </div>
+            <p className="student-name">{name}</p>
+            <p className="student-title">{title}</p>
+        </div>
+    );
 }
 
 export default StudentCard;

@@ -13,7 +13,7 @@
 .student-name {
     font-weight: bold;
     font-size: 16px;
-    margin-top: 7px;
+    margin-top: 40px;
 }
 
 .student-title {
@@ -46,6 +46,11 @@
 
 .picture-container {
     position: relative;
+}
+
+.picture-container img {
+    width: 100%;
+    height: auto;
 }
 
 .description-text {
