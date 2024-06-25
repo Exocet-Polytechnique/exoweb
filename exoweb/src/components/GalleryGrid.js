@@ -1,7 +1,7 @@
 import React from 'react';
 import './GalleryGrid.css';
 import CloseIcon from '../img/icons/close.svg';
-import images from '../img/gallery/imageData';
+import images from '../img/gallery/compressed/imageData';
 
 const GalleryGrid = () => {
     const data = images.map((img, index) => ({

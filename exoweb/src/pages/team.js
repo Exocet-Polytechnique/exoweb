@@ -2,14 +2,16 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import StudentCard from "../components/StudentCard";
-import Anne from    '../img/team/2023/anne.jpg';
-import Charles from '../img/team/2023/charles.jpg';
-import Emile from   '../img/team/2023/emile.jpg';
-import Etienne from '../img/team/2023/etienne.jpg';
-import Francis from '../img/team/2023/francis.jpg';
-import Tiphaine from '../img/team/2023/tiphaine.jpg';
-import Xavier from  '../img/team/2023/xavier.jpg';
-import Zachary from '../img/team/2023/zachary.jpg';
+import Anne from    '../img/team/2023/compressed/anne.jpg';
+import Charles from '../img/team/2023/compressed/charles.jpg';
+import Emile from   '../img/team/2023/compressed/emile.jpg';
+import Etienne from '../img/team/2023/compressed/etienne.jpg';
+import Francis from '../img/team/2023/compressed/francis.jpg';
+import Tiphaine from '../img/team/2023/compressed/tiphaine.jpg';
+import Xavier from  '../img/team/2023/compressed/xavier.jpg';
+import Zachary from '../img/team/2023/compressed/zachary.jpg';
+import Mathilda from '../img/team/2023/compressed/mathilda.jpeg';
+
 import "./team.css"
 
 function Team() {
@@ -45,7 +47,7 @@ function Team() {
                     <StudentCard image={Anne} bio="test" name="Eliot Fondère" title="Membre informatique"></StudentCard>
                     <StudentCard image={Anne} bio="test" name="Guillaume Chénier" title="Membre informatique"></StudentCard>
                     <StudentCard image={Anne} bio="test" name="Dorian Emmanuel Bernard" title="Membre structure"></StudentCard>
-                    <StudentCard image={Anne} bio="test" name="Mathilda Herrell" title="Membre logiciel"></StudentCard>
+                    <StudentCard image={Mathilda} bio="test" name="Mathilda Herrell" title="Membre logiciel"></StudentCard>
                     <StudentCard image={Charles} bio="test" name="Charles-Francis Damedey" title="Membre logiciel"></StudentCard>
                 </div>
             </div>
