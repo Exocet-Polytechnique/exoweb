@@ -81,3 +81,28 @@ input[type=text]::placeholder, .message-placeholder {
 	height: 40px;
 	cursor: pointer;
 }
+
+.notification {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	z-index: 10; /* Ensure notification is on top */
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  .notification.show {
+	opacity: 1;
+  }
+  
+  .notification:not(.show) {
+	opacity: 0;
+	transform: translateX(-50%) translateY(-100%); /* Slide up on hide */
+  }
+  

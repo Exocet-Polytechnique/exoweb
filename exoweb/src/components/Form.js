@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./Form.css"; // Include the CSS import
 
 function Form() {
-  const [formData, setFormData] = useState({
+
+    const [isVisible, setIsVisible] = useState(false);
+const [formData, setFormData] = useState({
     prenom: "",
     nom: "",
     email: "",
@@ -50,6 +52,11 @@ function Form() {
     if (Object.keys(validationErrors).length === 0) {
       // Submit the form data (e.g., send to your email)
       console.log("Form submitted successfully:", formData);
+        setIsVisible(true);
+        setTimeout(() => {
+            setIsVisible(false);
+        }, 3300);
+      setFormData({ prenom: "", nom: "", email: "", message: "", sujet: "" }); // Clear form data
       // Implement your form submission logic here (e.g., API call)
     }
   };
@@ -117,6 +124,9 @@ function Form() {
       <button id="send-button" onClick={handleSubmit}>
         Envoyer
       </button>
+      <div className={`notification ${isVisible ? "show" : ""}`}>
+      <p>Votre message a été envoyé!</p>
+      </div>
     </div>
   );
 }
