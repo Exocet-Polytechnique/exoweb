@@ -79,4 +79,5 @@ input[type=text]::placeholder, .message-placeholder {
 	margin-top: 30px;
 	width: 120px;
 	height: 40px;
+	cursor: pointer;
 }
