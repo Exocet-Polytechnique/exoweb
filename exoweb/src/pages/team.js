@@ -12,7 +12,9 @@ import Xavier from  '../img/team/2023/compressed/xavier.jpg';
 import Zachary from '../img/team/2023/compressed/zachary.jpg';
 import Mathilda from '../img/team/2023/compressed/mathilda.jpeg';
 import Aurelie from '../img/team/2023/compressed/aurelie.jpg';
-
+import Eliot from  '../img/team/2023/compressed/eliot.jpg';
+import Dorian from '../img/team/2023/compressed/dorian.jpg';
+import Justin from '../img/team/2023/compressed/justin.jpg';
 import "./team.css"
 
 function Team() {
@@ -26,7 +28,7 @@ function Team() {
                     <StudentCard image={Anne} bio="test" name="Anne Raymond" title="Directrice générale"></StudentCard>
                     <StudentCard image={Emile} bio="test" name="Émile Brousseau" title="Directeur technique"></StudentCard>
                     <StudentCard image={Tiphaine} bio="test" name="Tiphaine Le Rhun" title="Directrice des communications"></StudentCard>
-                    <StudentCard image={Anne} bio="test" name="Justin Lamouche" title="Trésorerie"></StudentCard>
+                    <StudentCard image={Justin} bio="test" name="Justin Lamouche" title="Trésorerie"></StudentCard>
                 </div>
             </div>
             <div className="member-type-container">
@@ -44,9 +46,9 @@ function Team() {
             <div className="member-type-container">
                <p className="team-subtitle">Membres</p>
                 <div className="cards-container">
-                    <StudentCard image={Anne} bio="test" name="Eliot Fondère" title="Membre informatique"></StudentCard>
+                    <StudentCard image={Eliot} bio="test" name="Eliot Fondère" title="Membre informatique"></StudentCard>
                     <StudentCard image={Anne} bio="test" name="Guillaume Chénier" title="Membre informatique"></StudentCard>
-                    <StudentCard image={Anne} bio="test" name="Dorian Emmanuel Bernard" title="Membre structure"></StudentCard>
+                    <StudentCard image={Dorian} bio="test" name="Dorian Emmanuel Bernard" title="Membre structure"></StudentCard>
                     <StudentCard image={Mathilda} bio="test" name="Mathilda Herrell" title="Membre logiciel"></StudentCard>
                     <StudentCard image={Charles} bio="test" name="Charles-Francis Damedey" title="Membre logiciel"></StudentCard>
                 </div>

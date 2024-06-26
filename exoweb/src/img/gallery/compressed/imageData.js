@@ -13,6 +13,7 @@ const images = [
     { name: 'struct_22', src: require('./struct_22.jpg') },
     { name: 'team23', src: require('./team23.jpg') },
     { name: 'team_pic_inauguration', src: require('./team_pic_inauguration.jpg') },
+    { name: 'team_pic_inauguration2', src: require('./team_pic_inauguration2.jpg') },
     { name: 'team_pic_lassonde', src: require('./team_pic_lassonde.jpg') },
     { name: 'team_spirit_22', src: require('./team_spirit_22.jpg') },
     { name: 'computer_work_atelier', src: require('./computer_work_atelier.jpg') },
