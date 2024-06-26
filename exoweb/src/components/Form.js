@@ -24,7 +24,7 @@ const [formData, setFormData] = useState({
     return regex.test(email);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const validationErrors = {};
@@ -50,8 +50,21 @@ const [formData, setFormData] = useState({
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
+        const url = "https://formspree.io/f/xeojjvrj"; // Replace with your endpoint URL
+        console.log("Form submitted successfully:", formData);
+        try {
+            const response = await fetch(url, {
+              method: "POST", // HTTP method for form submission
+              body: JSON.stringify(formData), // Send form data as JSON
+              headers: { "Content-Type": "application/json" }, // Set content type header
+            });
+      
+            // ... handle response and errors
+          } catch (error) {
+            console.error("Error submitting form:", error);
+          }
+    
       // Submit the form data (e.g., send to your email)
-      console.log("Form submitted successfully:", formData);
         setIsVisible(true);
         setTimeout(() => {
             setIsVisible(false);

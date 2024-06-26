@@ -11,6 +11,7 @@ import Tiphaine from '../img/team/2023/compressed/tiphaine.jpg';
 import Xavier from  '../img/team/2023/compressed/xavier.jpg';
 import Zachary from '../img/team/2023/compressed/zachary.jpg';
 import Mathilda from '../img/team/2023/compressed/mathilda.jpeg';
+import Aurelie from '../img/team/2023/compressed/aurelie.jpg';
 
 import "./team.css"
 
@@ -36,9 +37,8 @@ function Team() {
                 <StudentCard image={Zachary} bio="test" name="Zachary Ouellet" title="Structure"></StudentCard>
                 </div>
                 <div className="cards-container">
-                    <StudentCard image={Zachary} bio="test" name="Zachary Ouellet" title="Systèmes"></StudentCard>
                     <StudentCard image={Xavier} bio="test" name="Xavier Corbeil" title="Électrique"></StudentCard>
-                    <StudentCard image={Anne} bio="test" name="Aurélie" title="Chargé du développement durable"></StudentCard>
+                    <StudentCard image={Aurelie} bio="test" name="Aurélie Jund" title="Développement Durable"></StudentCard>
                 </div>
             </div>
             <div className="member-type-container">
