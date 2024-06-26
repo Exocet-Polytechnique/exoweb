@@ -12,9 +12,10 @@ import Xavier from  '../img/team/2023/compressed/xavier.jpg';
 import Zachary from '../img/team/2023/compressed/zachary.jpg';
 import Mathilda from '../img/team/2023/compressed/mathilda.jpeg';
 import Aurelie from '../img/team/2023/compressed/aurelie.jpg';
-import Eliot from  '../img/team/2023/compressed/eliot.jpg';
+import Eliot from  '../img/team/2023/compressed/eliot2.jpg';
 import Dorian from '../img/team/2023/compressed/dorian.jpg';
 import Justin from '../img/team/2023/compressed/justin.jpg';
+import Guillaume from '../img/team/2023/compressed/guillaume.jpg';
 import "./team.css"
 
 function Team() {
@@ -47,10 +48,14 @@ function Team() {
                <p className="team-subtitle">Membres</p>
                 <div className="cards-container">
                     <StudentCard image={Eliot} bio="test" name="Eliot Fondère" title="Membre informatique"></StudentCard>
-                    <StudentCard image={Anne} bio="test" name="Guillaume Chénier" title="Membre informatique"></StudentCard>
+                    <StudentCard image={Guillaume} bio="test" name="Guillaume Chénier" title="Membre informatique"></StudentCard>
                     <StudentCard image={Dorian} bio="test" name="Dorian Emmanuel Bernard" title="Membre structure"></StudentCard>
                     <StudentCard image={Mathilda} bio="test" name="Mathilda Herrell" title="Membre logiciel"></StudentCard>
-                    <StudentCard image={Charles} bio="test" name="Charles-Francis Damedey" title="Membre logiciel"></StudentCard>
+                    <StudentCard image={Charles} 
+                    bio="
+                    eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee 
+                     "
+                    name="Charles-Francis Damedey" title="Membre logiciel"></StudentCard>
                 </div>
             </div>
             <Footer/> {/* Add the Footer component */}
