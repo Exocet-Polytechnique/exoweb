@@ -32,7 +32,7 @@ function Sponsors() {
                     <p className="sponsors-subtitle">Téléchargez notre document de commandite</p>
                     <div className="buttons-container">
                         <button id="french" onClick={() => handleDownload("french")}>En français<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
-                        <button id="english" onClick={() => handleDownload("english")}>En anglais<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
+                        <button id="english" onClick={() => handleDownload("english")}>In English<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
                     </div>
                 </div>
                 <div className="sponsor-cards">
