@@ -8,8 +8,21 @@ import corte from '../img/misc/vec_corte.svg';
 import goelette from '../img/misc/vec_goelette.svg';
 import ketch from '../img/misc/vec_ketch.svg';
 import sloop from '../img/misc/vec_sloop.svg';
+import french_sponsor_document_2024 from '../documents/french_sponsor_document_2024.pdf';
+import english_sponsor_document_2024 from '../documents/english_sponsor_document_2024.pdf';
 
 function Sponsors() {
+    const handleDownload = (language) => {
+        // Logic to handle the download based on the selected language
+        if (language === "french") {
+            // Download the French document
+            window.open(french_sponsor_document_2024, "_blank");
+        } else if (language === "english") {
+            // Download the English document
+            window.open(english_sponsor_document_2024, "_blank");
+        }
+    };
+
     return (
         <div>
             <NavBar/>
@@ -18,8 +31,8 @@ function Sponsors() {
                 <div className="document-container">
                     <p className="sponsors-subtitle">Téléchargez notre document de commandite</p>
                     <div className="buttons-container">
-                        <button id="french">En français<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
-                        <button id="english">En anglais<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
+                        <button id="french" onClick={() => handleDownload("french")}>En français<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
+                        <button id="english" onClick={() => handleDownload("english")}>En anglais<img src={downloadLogo} alt="download logo" className="download-symbol"/></button>
                     </div>
                 </div>
                 <div className="sponsor-cards">
