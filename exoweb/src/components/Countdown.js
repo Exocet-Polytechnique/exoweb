@@ -13,10 +13,19 @@ function Countdown() {
       const monacoDate = new Date("29 June, 2024");
       const totalSeconds = (monacoDate - currentDate) / 1000;
 
-      setDays(format(Math.floor(totalSeconds / 3600 / 24)));
-      setHours(Math.floor(totalSeconds / 3600) % 24);
-      setMinutes(Math.floor(totalSeconds / 60) % 60);
-      setSeconds(Math.floor(totalSeconds % 60));
+      if (totalSeconds <= 0) {
+        clearInterval(interval);
+        setDays(0);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
+      } else {
+        setDays(format(Math.floor(totalSeconds / 3600 / 24)));
+        setHours(Math.floor(totalSeconds / 3600) % 24);
+        setMinutes(Math.floor(totalSeconds / 60) % 60);
+        setSeconds(Math.floor(totalSeconds % 60));
+      }
+      
     });
     return () => clearInterval(interval);
   }, [seconds]);
