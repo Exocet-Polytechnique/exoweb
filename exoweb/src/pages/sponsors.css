@@ -5,6 +5,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 .sponsors-header {
     font-weight: bold;
     font-size: 45px;
@@ -14,6 +15,7 @@
     z-index: 100;
 }
 
+
 .sponsors-subtitle {
     font-weight: bold;
     font-size: 22px;
@@ -21,6 +23,7 @@
     z-index: 100;
     position: relative;
 }
+
 
 button {
     color: rgba(255, 255, 255, 1);
@@ -36,13 +39,14 @@ button {
     align-items: center;
     letter-spacing: 0.1cap;
     margin: 10px;
-    cursor: pointer;
 }
+
 
 .buttons-container {
     display: flex;
     flex-direction: row;
 }
+
 
 .document-container {
     display: flex;
@@ -51,10 +55,11 @@ button {
     align-items: center;
 }
 
+
 .download-symbol {
     height: 22px;
-
 }
+
 
 #brick, #ketch, #sloop {
     float: left;
@@ -63,6 +68,7 @@ button {
     flex-direction: row-reverse;
 }
 
+
 #corte, #goelette {
     float: right;
     position: relative;
@@ -70,22 +76,27 @@ button {
     flex-direction: row-reverse;
 }
 
+
 #ketch {
     margin-top: -40px;
 }
+
 
 #corte {
     margin-top: -30px;
 }
 
+
 #sloop {
     margin-bottom: 100px;
 }
+
 
 .sponsor-cards {
     display: block;
     margin-top: 50px;
 }
+
 
 .sponsor-title {
     font-weight: bold;
@@ -94,17 +105,20 @@ button {
     position: absolute;
 }
 
+
 #brick .sponsor-title {
     transform: rotate(-25deg);
     left: 0;
     margin-left: 100px;
 }
 
+
 #goelette .sponsor-title {
     transform: rotate(16deg);
     top: -70px;
     margin-right: 20px;
 }
+
 
 #ketch .sponsor-title {
     transform: rotate(23deg);
@@ -113,11 +127,13 @@ button {
     margin-left: 120px;
 }
 
+
 #corte .sponsor-title {
     transform: rotate(-30deg);
     top: -5px;
     margin-right: 150px;
 }
+
 
 #sloop .sponsor-title {
     transform: rotate(10deg);
@@ -126,10 +142,12 @@ button {
     margin-left: 210px;
 }
 
+
 .sponsor-vector {
     position: relative;
     margin-bottom: -200px;
 }
+
 
 @media (max-width: 1400px) {
     .sponsor-vector {
@@ -137,8 +155,183 @@ button {
     }
 }
 
+
 @media (max-width: 900px) {
     .sponsor-vector {
         margin-bottom: 50px;
     }
+}
+
+
+.logo {
+    z-index: 200;
+    position: absolute;
+}
+
+
+.swagelok-logo {
+    height: 170px;
+    width: 100%;
+    top: 310px;
+    left: -150px;
+}
+
+
+.polytechnique-logo {
+    top: 350px;
+    left: -30px;
+    height: 150px;
+    width: 100%;
+}
+
+
+.fondationalumni-logo {
+    top: 550px;
+    left: 200px;
+    height: 130px;
+    width: 100%;
+}
+
+
+.faie-logo {
+    top: 900px;
+    left: -230px;
+    height: 80px;
+    width: 100%;
+}
+
+
+.rimdrive-logo {
+    top: 720px;
+    height: 60px;
+    left: 160px;
+    width: 100%;
+}
+
+
+.hanbay-logo {
+    top: 570px;
+    left: 290px;
+    height: 90px;
+    width: 100%;
+}
+
+
+.brightloop-logo {
+    top: 760px;
+    left: -380px;
+    height: 80px;
+    width: 100%;
+}
+
+
+.aquon-logo{
+    top: 270px;
+    left: -110px;
+    height: 90px;
+    width: 100%;
+}
+
+
+.solidworks-logo {
+    top: 350px;
+    left: -270px;
+    height: 110px;
+    width: 100%;
+}
+
+
+.bassmetal-logo {
+    top: 150px;
+    left: 230px;
+    height: 90px;
+    width: 100%;
+}
+
+
+.uh2-logo {
+    top: 380px;
+    left: 180px;
+    height: 130px;
+    width: 100%;
+}
+
+
+.forcesavenir-logo {
+    height: 140px;
+    width: 100%;
+    top: 150px;
+    left: -420px;  
+}
+
+
+.altium-logo {
+    height: 80px;
+    width: 100%;
+    top: 830px;
+    left: 170px;
+}
+
+
+.alstom-logo {
+    height: 80px;
+    width: 100%;
+    top: 490px;
+    left: -200px;
+}
+
+
+.lojiq-logo {
+    height: 110px;
+    width: 100%;
+    top: 600px;
+    left: -310px;
+}
+
+
+.cec-logo {
+    height: 150px;
+    width: 100%;
+    top: 600px;
+    left: -50px;
+}
+
+
+.trottier-logo {
+    height: 140px;
+    width: 100%;
+    top: 400px;
+    left: 250px;
+}
+
+
+.thomasmarine-logo {
+    height: 170px;
+    width: 100%;
+    top: 170px;
+    left: -300px;
+}
+
+
+.polyelan-logo {
+    height: 150px;
+    width: 100%;
+    top: 350px;
+    left: 70px;
+}
+
+
+.aep-logo {
+    height: 150px;
+    width: 100%;
+    top: 450px;
+    left: -300px;
+}
+
+
+.cirodd-logo {
+    height: 130px;
+    width: 100%;
+    top: 600px;
+    left: 10px;
 }
