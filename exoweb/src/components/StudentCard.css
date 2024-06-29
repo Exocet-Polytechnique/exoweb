@@ -8,6 +8,7 @@
     text-align: center;
     margin: 15px 20px;
     width: 170px;
+    overflow: hidden;
 }
 
 .student-name {
@@ -61,5 +62,4 @@
     max-width: 140px;
     height: 100%;
     position: absolute;
-    overflow: hidden;
 }

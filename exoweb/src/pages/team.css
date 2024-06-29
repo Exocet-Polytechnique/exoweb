@@ -27,3 +27,7 @@
     align-items: flex-start;
     justify-content: center;
 }
+
+.member-type-container {
+    margin-bottom: 40px;
+}
