@@ -39,6 +39,7 @@ button {
     align-items: center;
     letter-spacing: 0.1cap;
     margin: 10px;
+    cursor: pointer;
 }
 
 
