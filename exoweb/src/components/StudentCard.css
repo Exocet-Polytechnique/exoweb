@@ -13,7 +13,6 @@
 .student-name {
     font-weight: bold;
     font-size: 16px;
-    margin-top: 40px;
 }
 
 .student-title {
@@ -22,7 +21,7 @@
 
 .student-card > div {
     background-color: rgba(55, 75, 87, 1);
-    height: 191px;
+    height: 225px;
     width: 150px;
 }
 
@@ -34,7 +33,8 @@
 
 .description-cover {
     background-color: rgba(193, 39, 54, 1);
-    width: 150px;
+    width: 100%;
+    height: auto;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -42,13 +42,15 @@
     text-align: center;
     bottom: 0;
     left: 0;
+    z-index: 2;
 }
 
 .picture-container {
     position: relative;
+    height: 225px;
 }
 
-.picture-container img {
+.student-image {
     width: 100%;
     height: auto;
 }
@@ -57,4 +59,7 @@
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
     max-width: 140px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
 }
