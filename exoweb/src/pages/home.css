@@ -10,14 +10,15 @@
 .countdown-container {
     margin-top: 60px;
     margin-left: 60px;
+    z-index: 100;
 }
 
 .homepage-wave {
     width: 100%;
     position: relative;
     left: 0;
-    margin-top: 300px;
-    margin-bottom: 600px;
+    margin-bottom: 0px;
+    transform: scaleY(0.7);
 }
 
 ::-webkit-scrollbar {
@@ -31,4 +32,193 @@
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(55, 75, 87, 1);
 	border-radius: 40px;
+}
+
+.wave-text {
+    z-index: 200;
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 50%;
+    margin-right: 15vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    font-weight: bold;
+    letter-spacing: 0.1cap;
+    width: 50vh;
+    height: 150px;
+    transform: translateY(-60%);
+    padding: 10px;
+    margin-top: 90px;
+    line-height: 1.6;
+}
+
+.wave-boat {
+    z-index: 200;
+    position: absolute;
+    margin-right: 55%;
+    width: 40%;
+    transform: translateY(-5%);
+    height: auto;
+    border-radius: 90px;
+}
+
+@media (max-width: 1200px) {
+    .wave-text-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        z-index: 400;
+        margin-top: 10vh;
+    }
+}
+
+.wave-text-container {
+    position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        z-index: 400;
+        margin-top: 200px;
+}
+
+.bottom-text {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(193, 39, 54, 1);
+    text-align: justify;
+    margin-left: 15vh;
+    margin-right: 50%;
+    margin-bottom: 10%;
+    width: 50vh;
+    font-weight: bold;
+    letter-spacing: 0.1cap;
+    line-height: 1.6;
+    margin-top: 0px;
+}
+
+.bateau-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.bottom-boat {
+    z-index: 200;
+    position: absolute;
+    margin-left: 57%;
+    width: 40%;
+    height: auto;
+    border-radius: 90px;
+    align-self: center;
+    margin-bottom: 10%;
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .homepage-wave {
+        width: 100%;
+        transform: scaleY(0.9);
+        position: relative;
+        left: 0;
+        margin-bottom: 0px;
+    }
+
+    .wave-text-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40%;
+    }
+
+    .bottom-text {
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(193, 39, 54, 1);
+        text-align: justify;
+        width: 80%;
+        height: auto;
+        font-weight: bold;
+        letter-spacing: 0.1cap;
+        line-height: 1.6;
+        z-index: 500;
+        margin: 0px 50px;
+        margin-bottom: 50px;
+        top: 50%;
+    }
+
+    .wave-text {
+        z-index: 500;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(255, 255, 255, 1);
+        text-align: justify;
+        font-weight: bold;
+        letter-spacing: 0.1cap;
+        width: 80%;
+        height: auto;
+        line-height: 1.6;
+        margin: 0px 50px;
+        top: 50%;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .wave-boat, .bottom-boat {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .wave-text-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 55%;
+        margin-bottom: 5%;
+    }
+
+    .homepage-wave {
+        width: 100%;
+        transform: scaleY(1.2);
+        position: relative;
+        left: 0;
+        margin-bottom: 0px;
+    }
+
+    .wave-text {
+        z-index: 500;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(255, 255, 255, 1);
+        text-align: justify;
+        font-weight: bold;
+        letter-spacing: 0.1cap;
+        width: 80%;
+        height: auto;
+        line-height: 1.6;
+        margin: 0px 50px;
+        top: 55%;
+    }
 }
