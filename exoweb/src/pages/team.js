@@ -18,6 +18,7 @@ import Justin from '../img/team/2023/compressed/justin.jpg';
 import Guillaume from '../img/team/2023/compressed/guillaume.jpg';
 import "./team.css"
 
+
 function Team() {
     return (
         <div className="team-page">
