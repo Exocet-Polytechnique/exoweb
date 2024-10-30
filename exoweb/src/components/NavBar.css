@@ -3,10 +3,27 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 20px;
+    padding: 0.5% 15px;
     background-color: rgba(193, 39, 54, 1);
     font-family: 'Josefin Sans', sans-serif;
     color: rgba(255, 255, 255, 1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: 0.4s;
+}
+
+#ExocetTitle {
+    transition: font-size 0.3s ease; 
+}
+
+
+#image {
+    transition: width 0.3s ease, height 0.3s ease; 
+}
+
+.home .navBar{
+    opacity: 0.8;
 }
 
 .title-group {

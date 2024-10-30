@@ -11,7 +11,9 @@ import bateau2 from '../img/misc/bateau2.svg';
 function Home() {
     return (
         <div className="home">
+
             <NavBar/> {/* Add the NavBar component */}
+    
             <img src={bateaubg} alt="bateau" className="bateau-background"/>
             <div className="countdown-container">
                 <Countdown className="countdown-homepage"/>
