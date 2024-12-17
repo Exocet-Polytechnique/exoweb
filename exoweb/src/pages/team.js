@@ -10,7 +10,7 @@ import Francis from '../img/team/2023/compressed/francis.jpg';
 import Tiphaine from '../img/team/2023/compressed/tiphaine.jpg';
 import Xavier from  '../img/team/2023/compressed/xavier.jpg';
 import Zachary from '../img/team/2023/compressed/zachary.jpg';
-import Mathilda from '../img/team/2023/compressed/mathilda.jpeg';
+import Mathilda from '../img/team/2023/compressed/mathilda.jpg';
 import Aurelie from '../img/team/2023/compressed/aurelie.jpg';
 import Eliot from  '../img/team/2023/compressed/eliot2.jpg';
 import Dorian from '../img/team/2023/compressed/dorian.jpg';
