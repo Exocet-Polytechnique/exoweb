@@ -4,9 +4,9 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Countdown from "../components/Countdown";
 import wave from '../img/misc/wave_homepage.svg';
-import bateaubg from '../img/misc/bateaubg.svg';
-import bateau1 from '../img/misc/bateau1.svg';
-import bateau2 from '../img/misc/bateau2.svg';
+import bateaubg from '../img/misc/bateaubg.jpg';
+import bateau1 from '../img/misc/bateau1.jpg';
+import bateau2 from '../img/misc/bateau2.jpg';
 
 function Home() {
     return (

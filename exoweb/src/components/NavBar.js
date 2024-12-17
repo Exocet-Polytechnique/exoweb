@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 import Dropdown from "../components/Dropdown"; // Import the Dropdown component
 
-import fishImage from '../img/misc/poissonexocet.svg'
+import fishImage from '../img/misc/logo_exocet.png'
 
 
 

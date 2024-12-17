@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.css';
-import facebookLogo from '../img/misc/facebook.svg';
-import githubLogo from '../img/misc/github.svg';
-import instagramLogo from '../img/misc/instagram.svg';
+import facebookLogo from '../img/misc/facebook.png';
+import githubLogo from '../img/misc/github.png';
+import instagramLogo from '../img/misc/instagram.png';
 import linkedinLogo from '../img/misc/linkedin.svg';
 
 function Footer() {
