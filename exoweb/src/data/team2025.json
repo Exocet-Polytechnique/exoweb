@@ -1,0 +1,190 @@
+{
+    "executif" : [
+        {
+            "image": "anneR.jpg",
+            "bio": "",
+            "name":"Anne Raymond",
+            "title": "Directrice logistique"
+        },
+        {
+            "image": "emilienL.jpg",
+            "bio": "",
+            "name":"Emilien Lemieux",
+            "title": "Directeur technique"
+        },{
+            "image": "tiphaine.jpg",
+            "bio": "",
+            "name":"Tiphaine Le Rhun",
+            "title": "Directrice logistique"
+        },
+        {
+            "image": "justinL.jpg",
+            "bio": "",
+            "name":"Justin Lamouche",
+            "title": "Trésorier"
+        }
+    ],
+    "energie" : [
+        {
+            "image": "chloe.jpg",
+            "bio": "J'organise les réunions et les tests à faire pour que notre système énergétique soit à jour. Je travaille aussi sur la fabrication en atelier des projets.",
+            "name":"Charles-Eric Lefebvre",
+            "title": "Chef d'équipe"
+        },{
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Ivan De la cuesta",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Alain Giresse Ndongo Ndongo",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Dorian Bernard",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Justin Tassé",
+            "title": "Membre"
+        }
+    ],
+    "embarque" : [
+        {
+            "image": "EliotF.jpg",
+            "bio": "J'organise et je supervise les réunions et les projets pour l'équipe d'embarqué. J'aide aussi à concevoir les circuits électriques du bateau.",
+            "name":"Eliot Fondère",
+            "title": "Chef d'équipe"
+        },
+        {
+            "image": "guillaumeC.jpg",
+            "bio": "Je m'occupe du design des circuits imprimés et je synthétise l'information lors de nos rencontres d'équipe.",
+            "name":"Guillaume Chénier",
+            "title": "Secrétaire et assistant du chef d'équipe"
+        },
+        {
+            "image": "gabrielS.jpg",
+            "bio": "",
+            "name":"Gabriel Sabérian",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Diego Campos",
+            "title": "Membre"
+        }
+    ],
+    "structure" : [
+        {
+            "image": "gael.jpg",
+            "bio": "",
+            "name":"Gael Lavigne-Champagne",
+            "title": "Membre"
+        },
+        {
+            "image": "thomasB.jpg",
+            "bio": "",
+            "name":"Thomas Bourque",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Chloé Walker",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Arnault Libert",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "Directeur Communication (Temporaire)",
+            "name":"Bernard Ye",
+            "title": "Membre"
+        },
+        {
+            "image": "joanLP.jpg",
+            "bio": "",
+            "name":"Joan Le Pouhaër",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Laurent Desmarais",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Thomas Lusignan",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Théo Dantard",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Azari Hubert",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Anton Salmeron Tonial",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Nicolas Pardo Cabrera",
+            "title": "Membre"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "",
+            "name":"Gabriel",
+            "title": "Membre"
+        }
+    ],
+    "logiciel": [
+        {
+            "image": "charles2025.jpg",
+            "bio": "Je m'assure de la maintenance et l'hébergement du site web d'Exocet. Je guide aussi l'équipe logiciel afin d'arriver à nos objectifs communs.",
+            "name":"Charles-Francis Damedey",
+            "title": "VP Site Web"
+        },
+        {
+            "image": "noemie.jpg",
+            "bio": "Membre passionné par le logiciel wowowowow",
+            "name":"Mathida Herrell",
+            "title": "Membre"
+        },
+        {
+            "image": "noemie.jpg",
+            "bio": "Je contribue à la conception et au developpement du site web",
+            "name":"Noémie Hélias",
+            "title": "Membre"
+        },
+        {
+            "image": "rosalie.jpg",
+            "bio": "Je contribue à la conception et au developpement du site web",
+            "name":"Rosalie Lamoureux",
+            "title": "Membre"
+        }
+    ]
+}

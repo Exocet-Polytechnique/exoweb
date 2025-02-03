@@ -1,0 +1,23 @@
+.sideBar {
+    width: 230px;
+    z-index: 1;
+    top: 200px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+    position: absolute;
+}
+
+.team-link {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(193, 39, 54);
+    display: block;
+    max-width: 10%;
+}
+
+.team-link:hover {
+    text-decoration: underline;
+}

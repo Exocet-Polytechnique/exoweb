@@ -39,7 +39,7 @@ function StudentCard(props) {
     return (
         <div className="student-card">
             <div className="picture-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <img src={image} alt="Student Image" className="student-image" />
+                <img src={image} alt="Student" className="student-image" />
                 {visible && <div className="description-cover" style={{height, top: `calc(100% - ${height}px)`}}>
                     <p className="description-text" style={{height: "75%"}}>{bio}</p>
                 </div>}
