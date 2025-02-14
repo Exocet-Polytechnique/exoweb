@@ -1,11 +1,10 @@
-.sideBar {
-    width: 230px;
-    z-index: 1;
-    top: 200px;
+.side-bar {
+    width: auto;
+    top: 150px;
     left: 10px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 8px 0;
-    position: absolute;
+    position: fixed;
 }
 
 .team-link {

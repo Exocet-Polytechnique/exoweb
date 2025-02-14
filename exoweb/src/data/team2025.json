@@ -11,11 +11,12 @@
             "bio": "",
             "name":"Emilien Lemieux",
             "title": "Directeur technique"
-        },{
-            "image": "tiphaine.jpg",
-            "bio": "",
-            "name":"Tiphaine Le Rhun",
-            "title": "Directrice logistique"
+        },
+        {
+            "image": "chloe.jpg",
+            "bio": "Directeur Communication",
+            "name":"Bernard Ye",
+            "title": "Membre"
         },
         {
             "image": "justinL.jpg",
@@ -24,9 +25,23 @@
             "title": "Trésorier"
         }
     ],
+    "communication": [
+        {
+            "image": "tiphaine.jpg",
+            "bio": "",
+            "name":"Tiphaine Le Rhun",
+            "title": "Membre"
+        },
+        {
+            "image": "tatianaR.jpg",
+            "bio": "",
+            "name":"Tatiana Rudenok",
+            "title": "Membre"
+        }
+    ],
     "energie" : [
         {
-            "image": "chloe.jpg",
+            "image": "charlesEricL.jpg",
             "bio": "J'organise les réunions et les tests à faire pour que notre système énergétique soit à jour. Je travaille aussi sur la fabrication en atelier des projets.",
             "name":"Charles-Eric Lefebvre",
             "title": "Chef d'équipe"
@@ -43,7 +58,7 @@
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "dorianBernard.jpg",
             "bio": "",
             "name":"Dorian Bernard",
             "title": "Membre"
@@ -79,6 +94,12 @@
             "bio": "",
             "name":"Diego Campos",
             "title": "Membre"
+        },
+        {
+            "image": "lucPison.jpg",
+            "bio": "",
+            "name":"Luc Pison",
+            "title": "Membre"
         }
     ],
     "structure" : [
@@ -101,15 +122,9 @@
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "arnaultLibert.jpg",
             "bio": "",
             "name":"Arnault Libert",
-            "title": "Membre"
-        },
-        {
-            "image": "chloe.jpg",
-            "bio": "Directeur Communication (Temporaire)",
-            "name":"Bernard Ye",
             "title": "Membre"
         },
         {
@@ -119,7 +134,7 @@
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "laurentDesmarais.jpg",
             "bio": "",
             "name":"Laurent Desmarais",
             "title": "Membre"
@@ -149,15 +164,15 @@
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "nicolasPC.jpg",
             "bio": "",
             "name":"Nicolas Pardo Cabrera",
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "gabrielMC.jpg",
             "bio": "",
-            "name":"Gabriel",
+            "name":"Gabriel Morales Chaurette",
             "title": "Membre"
         }
     ],
@@ -171,7 +186,7 @@
         {
             "image": "noemie.jpg",
             "bio": "Membre passionné par le logiciel wowowowow",
-            "name":"Mathida Herrell",
+            "name":"Mathilda Herrell",
             "title": "Membre"
         },
         {

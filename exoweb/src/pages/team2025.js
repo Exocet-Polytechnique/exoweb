@@ -15,6 +15,28 @@ function Team2025() {
     const equipeEnergie = equipe.energie;
     const equipeStructure = equipe.structure;
     const equipeLogiciel = equipe.logiciel;
+    const equipeCommunication = equipe.communication;
+
+    const renderTeamSection = (title, team) => (
+        <div className="member-type-container">
+          <p className="team-subtitle">{title}</p>
+          <div className="cards-container">
+            {team.map((student, index) => {
+              const imagePath = require(`../img/team/2025/${student.image}`);
+              return (
+                <StudentCard
+                  key={index}
+                  image={imagePath}
+                  bio={student.bio}
+                  name={student.name}
+                  title={student.title}
+                />
+              );
+            })}
+          </div>
+        </div>
+      );
+      
 
     return (
         <div className="team-page">
@@ -22,80 +44,12 @@ function Team2025() {
             <SideBar/> {/* Add the SideBar component */}
             <p className="team-header">Équipe 2025</p>
             <img src={Equipe} alt="Équipe Complete" id="equipeImage"></img>
-            <div className="member-type-container">
-                <p className="team-subtitle">Exécutif</p>
-                <div className="cards-container">
-                    {executif.map((student, index) => {
-                        const imagePath = require(`../img/team/2025/${student.image}`);
-                        return (
-                        <StudentCard
-                            key={index}
-                            image={imagePath}
-                            bio={student.bio}
-                            name={student.name}
-                            title={student.title}
-                        />
-                        )})}
-                </div>
-            </div>
-            <div className="member-type-container">
-                <p className="team-subtitle">Équipe Embarqué</p>
-                <div className="cards-container">
-                    {equipeEmbarque.map((student, index) => {
-                        const imagePath = require(`../img/team/2025/${student.image}`);
-                        return (
-                        <StudentCard
-                            key={index}
-                            image={imagePath}
-                            bio={student.bio}
-                            name={student.name}
-                            title={student.title}
-                        />
-                        )})}
-                </div>
-                <p className="team-subtitle">Équipe Énergie</p>
-                <div className="cards-container">
-                    {equipeEnergie.map((student, index) => {
-                        const imagePath = require(`../img/team/2025/${student.image}`);
-                        return (
-                        <StudentCard
-                            key={index}
-                            image={imagePath}
-                            bio={student.bio}
-                            name={student.name}
-                            title={student.title}
-                        />
-                        )})}
-                </div>
-                <p className="team-subtitle">Équipe Structure</p>
-                <div className="cards-container">
-                    {equipeStructure.map((student, index) => {
-                        const imagePath = require(`../img/team/2025/${student.image}`);
-                        return (
-                        <StudentCard
-                            key={index}
-                            image={imagePath}
-                            bio={student.bio}
-                            name={student.name}
-                            title={student.title}
-                        />
-                        )})}
-                </div>
-                <p className="team-subtitle">Équipe Logiciel</p>
-                <div className="cards-container">
-                    {equipeLogiciel.map((student, index) => {
-                        const imagePath = require(`../img/team/2025/${student.image}`);
-                        return (
-                        <StudentCard
-                            key={index}
-                            image={imagePath}
-                            bio={student.bio}
-                            name={student.name}
-                            title={student.title}
-                        />
-                    )})}
-                </div>
-            </div>
+            {renderTeamSection("Exécutif", executif)}
+            {renderTeamSection("Équipe Communication", equipeCommunication)}
+            {renderTeamSection("Équipe Embarqué", equipeEmbarque)}
+            {renderTeamSection("Équipe Énergie", equipeEnergie)}
+            {renderTeamSection("Équipe Structure", equipeStructure)}
+            {renderTeamSection("Équipe Logiciel", equipeLogiciel)}
             <Footer/> {/* Add the Footer component */}
         </div>
     )
