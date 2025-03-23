@@ -104,5 +104,51 @@ input[type=text]::placeholder, .message-placeholder {
   .notification:not(.show) {
 	opacity: 0;
 	transform: translateX(-50%) translateY(-100%); /* Slide up on hide */
-  }
-  
+}
+
+@media (max-width: 500px) {
+	.form-container {
+	  flex-direction: column;
+	  align-items: flex-start;
+	  width: 100%;
+	}
+	
+	.form-column {
+	  margin: 2% 0;
+	  width: 100%;
+	  align-items: flex-start;
+	}
+	
+	.input-box {
+	  width: 80%;
+	  max-width: 250px;
+	}
+	
+}
+
+@media (max-width: 320px) {
+	.form-container {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	  
+	.form-column {
+		margin: 2% 0;
+		width: 100%;
+		align-items: center;
+	}
+
+	.input-message {
+		width: 100%
+	}
+
+	.contact-header {  
+		font-size: 1.5rem;
+    }
+
+	
+}
+
+
+
