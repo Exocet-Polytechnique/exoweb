@@ -2,7 +2,7 @@
     position: fixed;
     top: 180px;
     left: 15px;
-    width: 150px; /* Fixed width */
+    width: 70px; /* Fixed width */
     background-color: white; /* Background for better visibility */
     display: flex;
     align-items: center;

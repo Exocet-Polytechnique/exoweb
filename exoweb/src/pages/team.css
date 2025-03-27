@@ -27,8 +27,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .member-type-container {
@@ -39,5 +39,5 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+    height: 520px;
 }

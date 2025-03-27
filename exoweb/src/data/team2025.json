@@ -13,10 +13,10 @@
             "title": "Directeur technique"
         },
         {
-            "image": "chloe.jpg",
-            "bio": "Directeur Communication",
+            "image": "bernardY.jpg",
+            "bio": "",
             "name":"Bernard Ye",
-            "title": "Membre"
+            "title": "Directeur communication"
         },
         {
             "image": "justinL.jpg",
@@ -45,17 +45,6 @@
             "bio": "J'organise les réunions et les tests à faire pour que notre système énergétique soit à jour. Je travaille aussi sur la fabrication en atelier des projets.",
             "name":"Charles-Eric Lefebvre",
             "title": "Chef d'équipe"
-        },{
-            "image": "chloe.jpg",
-            "bio": "",
-            "name":"Ivan De la cuesta",
-            "title": "Membre"
-        },
-        {
-            "image": "chloe.jpg",
-            "bio": "",
-            "name":"Alain Giresse Ndongo Ndongo",
-            "title": "Membre"
         },
         {
             "image": "dorianBernard.jpg",
@@ -64,7 +53,19 @@
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "alain.jpg",
+            "bio": "",
+            "name":"Alain Giresse Ndongo Ndongo",
+            "title": "Membre"
+        },
+        {
+            "image": "ivan.png",
+            "bio": "",
+            "name":"Ivan De la cuesta",
+            "title": "Membre"
+        },
+        {
+            "image": "justinT.jpg",
             "bio": "",
             "name":"Justin Tassé",
             "title": "Membre"
@@ -90,7 +91,7 @@
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
+            "image": "diego.jpg",
             "bio": "",
             "name":"Diego Campos",
             "title": "Membre"
@@ -103,6 +104,12 @@
         }
     ],
     "structure" : [
+        {
+            "image": "joanLP.jpg",
+            "bio": "",
+            "name":"Joan Le Pouhaër",
+            "title": "Chef d'équipe"
+        },
         {
             "image": "gael.jpg",
             "bio": "",
@@ -128,39 +135,15 @@
             "title": "Membre"
         },
         {
-            "image": "joanLP.jpg",
-            "bio": "",
-            "name":"Joan Le Pouhaër",
-            "title": "Membre"
-        },
-        {
             "image": "laurentDesmarais.jpg",
             "bio": "",
             "name":"Laurent Desmarais",
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
-            "bio": "",
-            "name":"Thomas Lusignan",
-            "title": "Membre"
-        },
-        {
-            "image": "chloe.jpg",
+            "image": "theoD.jpg",
             "bio": "",
             "name":"Théo Dantard",
-            "title": "Membre"
-        },
-        {
-            "image": "chloe.jpg",
-            "bio": "",
-            "name":"Azari Hubert",
-            "title": "Membre"
-        },
-        {
-            "image": "chloe.jpg",
-            "bio": "",
-            "name":"Anton Salmeron Tonial",
             "title": "Membre"
         },
         {
@@ -181,10 +164,10 @@
             "image": "charles2025.jpg",
             "bio": "Je m'assure de la maintenance et l'hébergement du site web d'Exocet. Je guide aussi l'équipe logiciel afin d'arriver à nos objectifs communs.",
             "name":"Charles-Francis Damedey",
-            "title": "VP Site Web"
+            "title": "Chef d'équipe"
         },
         {
-            "image": "noemie.jpg",
+            "image": "mathilda.jpg",
             "bio": "Membre passionné par le logiciel wowowowow",
             "name":"Mathilda Herrell",
             "title": "Membre"
