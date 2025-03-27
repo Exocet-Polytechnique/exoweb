@@ -1,0 +1,33 @@
+.side-bar {
+    position: fixed;
+    top: 180px;
+    left: 15px;
+    width: 70px; /* Fixed width */
+    background-color: white; /* Background for better visibility */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 4px solid rgb(193, 39, 54); /* Always visible vertical line */
+}
+
+.team-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.team-link {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(193, 39, 54);
+    display: block;
+    white-space: nowrap;
+}
+
+.team-link:hover {
+    text-decoration: underline;
+}

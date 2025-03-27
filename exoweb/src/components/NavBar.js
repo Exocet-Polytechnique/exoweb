@@ -57,7 +57,7 @@ function NavBar() {
       </a>
       <div className="links">
         <Link to="/" className="page-link">Accueil</Link>
-        <Dropdown className="nav-dropdown"></Dropdown>
+        <Link to="/team2025" className="page-link">Nos Équipes</Link>
         <Link to="/sponsors" className="page-link">Commanditaires</Link>
         <Link to="/gallery" className="page-link">Galerie</Link>
         <Link to="/contact" className="page-link">Nous rejoindre</Link>

@@ -7,6 +7,7 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import Sponsors from './pages/sponsors';
 import Gallery from './pages/gallery';
+import Team2025 from './pages/team2025';
 
 const routes = [
   {
@@ -28,6 +29,10 @@ const routes = [
   {
     path: 'gallery',
     element: <Gallery />
+  },
+  {
+    path: 'team2025',
+    element: <Team2025 />
   },
 ];
 

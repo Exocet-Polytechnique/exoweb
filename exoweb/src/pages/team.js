@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import SideBar from "../components/SideBar";
 import StudentCard from "../components/StudentCard";
 import Anne from    '../img/team/2023/compressed/anne.jpg';
 import Charles from '../img/team/2023/compressed/charles.jpg';
@@ -23,6 +24,7 @@ function Team() {
     return (
         <div className="team-page">
             <NavBar/> {/* Add the NavBar component */}
+            <SideBar/> {/* Add the SideBar component */}
             <p className="team-header">Équipe 2024</p>
             <div className="member-type-container">
                 <p className="team-subtitle">Exécutif</p>
@@ -44,8 +46,7 @@ function Team() {
                 name="Francis Bouchaud" title="Hydrogène"></StudentCard>
                 <StudentCard image={Etienne} bio="Je m'occupe des systèmes électroniques donnant vie au bateau, me permettant ainsi de prouver la viabilité de l'hydrogène vert dans le milieu maritime."
                  name="Étienne Lescarbeault" title="Électronique"></StudentCard>
-                <StudentCard image={Zachary} bio="test" 
-                name="Zachary Ouellet" title="Structure"></StudentCard>
+
                 </div>
                 <div className="cards-container">
                     <StudentCard image={Xavier} bio="test" 
@@ -55,21 +56,29 @@ function Team() {
                 </div>
             </div>
             <div className="member-type-container">
-               <p className="team-subtitle">Membres</p>
+               <p className="team-subtitle">Équipe informatique</p>
                 <div className="cards-container">
                     <StudentCard image={Eliot} bio="J'ai été en charge de la programmation du bateau et j'ai collaboré à la création des circuits imprimés et au design du système électronique" 
-                    name="Eliot Fondère" title="Membre informatique"></StudentCard>
+                    name="Eliot Fondère" title="Membre"></StudentCard>
                     <StudentCard image={Guillaume} bio="test" 
-                    name="Guillaume Chénier" title="Membre informatique"></StudentCard>
+                    name="Guillaume Chénier" title="Membre"></StudentCard>
+                </div>
+                <p className="team-subtitle">Équipe structure</p>
+                <div className="cards-container">
+                    <StudentCard image={Zachary} bio="test" 
+                    name="Zachary Ouellet" title="Chef d'équipe"></StudentCard>
                     <StudentCard image={Dorian} bio="test" 
-                    name="Dorian Emmanuel Bernard" title="Membre structure"></StudentCard>
+                    name="Dorian Emmanuel Bernard" title="Membre"></StudentCard>
+                </div>
+                <p className="team-subtitle">Équipe logiciel</p>
+                <div className="cards-container">
                     <StudentCard image={Mathilda} bio="test" 
-                    name="Mathilda Herrell" title="Membre logiciel"></StudentCard>
+                    name="Mathilda Herrell" title="Membre"></StudentCard>
                     <StudentCard image={Charles} 
                     bio="
                     eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee 
                      "
-                    name="Charles-Francis Damedey" title="Membre logiciel"></StudentCard>
+                    name="Charles-Francis Damedey" title="Membre"></StudentCard>
                 </div>
             </div>
             <Footer/> {/* Add the Footer component */}
