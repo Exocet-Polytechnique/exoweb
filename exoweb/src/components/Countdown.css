@@ -43,3 +43,22 @@
 .values-div > span {
     margin: 0px;
 }
+
+@media (max-width: 500px) {
+    .countdown {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .countdown-title {
+        font-size: 16px;
+    }
+
+    .values-text {
+        font-size: 16px;
+    }
+
+    .countdown-values {
+        margin: 0px 5px;
+    }
+}
