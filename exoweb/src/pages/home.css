@@ -3,9 +3,7 @@
     overflow: auto;
 }
 
-.peepee {
-    height: 5000px;
-}
+
 
 .countdown-container {
     margin-top: 60px;
@@ -222,4 +220,45 @@
         margin: 0px 50px;
         top: 55%;
     }
+}
+
+@media (max-width: 500px) {
+    .countdown-container {
+        align-self: center;
+    }
+
+    .homepage-wave {
+        width: 100%;
+        transform: scaleY(1.7);
+    }
+
+
+    .bottom-text {
+        font-size: small;
+        margin-top: 30%;
+        top: 70%;
+    }
+
+    .wave-text {
+        font-size: small;
+        top: 60%;
+    }
+
+    .bateau-background {
+        height: 80%;
+    }
+
+}
+
+@media (max-width: 380px){
+    .bateau-background{
+        height: 75%;
+    }
+}
+
+@media (max-width: 330px) {
+    .homepage-wave {
+        transform: scaleY(2);
+    }
+
 }

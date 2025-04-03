@@ -20,9 +20,9 @@ function Home() {
             </div>
             <div className="wave-text-container">
                 <img src={bateau1} alt="bateau 1" className="wave-boat"/>
-                <text className="wave-text">
+                <p className="wave-text">
                 Exocet est une société technique de la Polytechnique de Montréal qui a pour mission de construire un catamaran à énergie renouvelable. Après avoir participé au Monaco Energy Boat Challenge en 2022 avec un bâteau alimenté à l’électricité, Exocet a décidé de relever le défi de concevoir un catamaran fonctionnant avec de l’hydrogène. Deux ans plus tard, nous sommes fiers de vous présenter le premier catamaran en Amérique propulsé à l’hydrogène.
-                    </text>
+                    </p>
                 <img src={wave} alt="vague" className="homepage-wave"/>
             </div>
             <div className="bottom-container">

@@ -11,6 +11,7 @@
     top: 0;
     z-index: 999;
     transition: 0.4s;
+    min-width: 320px;
 }
 
 #ExocetTitle {
@@ -69,4 +70,42 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: 70%;
+}
+
+.menu-button {
+    display: none;
+  }
+
+@media (max-width: 500px) {
+    .menu-button {
+      display: block;
+      z-index: 1001;
+      font-size: 28px;
+    }
+  
+    .links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(193, 39, 54, 0.95);
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      max-width: 100%;
+      gap: 20px;
+    }
+    
+    #phrase {
+        display: none;
+    }
+
+    #ExocetTitle{
+        display: none;
+    }
+
+    .links.open {
+      display: flex;
+    }
 }
