@@ -245,14 +245,14 @@
     }
 
     .bateau-background {
-        height: 75%;
+        height: 80%;
     }
 
 }
 
 @media (max-width: 380px){
     .bateau-background{
-        height: 70%;
+        height: 75%;
     }
 }
 
