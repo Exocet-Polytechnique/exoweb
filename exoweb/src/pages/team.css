@@ -41,3 +41,14 @@
     margin-right: auto;
     height: 520px;
 }
+
+@media (max-width: 500px) {
+    #equipeImage {
+        display: none;
+    }
+
+    .team-subtitle {
+        width: min-content;
+        justify-self: center;
+    }
+}

@@ -29,27 +29,27 @@ function Team() {
             <div className="member-type-container">
                 <p className="team-subtitle">Exécutif</p>
                 <div className="cards-container">
-                    <StudentCard image={Anne} bio="test" 
+                    <StudentCard image={Anne}
                     name="Anne Raymond" title="Directrice générale"></StudentCard>
-                    <StudentCard image={Emile} bio="test" 
+                    <StudentCard image={Emile} 
                     name="Émile Brousseau" title="Directeur technique"></StudentCard>
                     <StudentCard image={Tiphaine} bio="Je m'occupe de tout ce qui est en lien avec la communication de l'équipe. De plus, pour me rendre utile à l'atelier, je perse, ponce, coupe, troue, vis..."
                      name="Tiphaine Le Rhun" title="Directrice des communications"></StudentCard>
-                    <StudentCard image={Justin} bio="test" 
+                    <StudentCard image={Justin} 
                     name="Justin Lamouche" title="Trésorerie"></StudentCard>
                 </div>
             </div>
             <div className="member-type-container">
                 <p className="team-subtitle">Chefs d'équipe</p>
                 <div className="cards-container">
-                <StudentCard image={Francis} bio="test" 
+                <StudentCard image={Francis} 
                 name="Francis Bouchaud" title="Hydrogène"></StudentCard>
                 <StudentCard image={Etienne} bio="Je m'occupe des systèmes électroniques donnant vie au bateau, me permettant ainsi de prouver la viabilité de l'hydrogène vert dans le milieu maritime."
                  name="Étienne Lescarbeault" title="Électronique"></StudentCard>
 
                 </div>
                 <div className="cards-container">
-                    <StudentCard image={Xavier} bio="test" 
+                    <StudentCard image={Xavier} 
                     name="Xavier Corbeil" title="Électrique"></StudentCard>
                     <StudentCard image={Aurelie} bio="Ce que j’aime chez Exocet c’est le défi d’utiliser l’hydrogène comme source d'énergie et de se donner les moyens d’arriver à un beau résultat"
                      name="Aurélie Jund" title="Développement Durable"></StudentCard>
@@ -65,20 +65,15 @@ function Team() {
                 </div>
                 <p className="team-subtitle">Équipe structure</p>
                 <div className="cards-container">
-                    <StudentCard image={Zachary} bio="test" 
+                    <StudentCard image={Zachary} 
                     name="Zachary Ouellet" title="Chef d'équipe"></StudentCard>
-                    <StudentCard image={Dorian} bio="test" 
+                    <StudentCard image={Dorian} 
                     name="Dorian Emmanuel Bernard" title="Membre"></StudentCard>
                 </div>
                 <p className="team-subtitle">Équipe logiciel</p>
                 <div className="cards-container">
-                    <StudentCard image={Mathilda} bio="test" 
-                    name="Mathilda Herrell" title="Membre"></StudentCard>
-                    <StudentCard image={Charles} 
-                    bio="
-                    eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeee 
-                     "
-                    name="Charles-Francis Damedey" title="Membre"></StudentCard>
+                    <StudentCard image={Mathilda} name="Mathilda Herrell" title="Membre"></StudentCard>
+                    <StudentCard image={Charles} name="Charles-Francis Damedey" title="Membre"></StudentCard>
                 </div>
             </div>
             <Footer/> {/* Add the Footer component */}
