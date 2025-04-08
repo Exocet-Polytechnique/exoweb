@@ -2,25 +2,25 @@
     "executif" : [
         {
             "image": "anneR.jpg",
-            "bio": "",
+            "bio": "Je suis responsable de la gestion des ressources humaines et matérielles de l'équipe. J'assure aussi le bon fonctionnement des activités.",
             "name":"Anne Raymond",
             "title": "Directrice logistique"
         },
         {
             "image": "emilienL.jpg",
-            "bio": "",
+            "bio": "Je suis responsable de la gestion des projets techniques de l'équipe. J'organise les réunions et je fais le pont entre les différentes sections.",
             "name":"Emilien Lemieux",
             "title": "Directeur technique"
         },
         {
             "image": "bernardY.jpg",
-            "bio": "",
+            "bio": "Je suis responsable de la gestion des réseaux sociaux et de la création de contenu pour promouvoir l'équipe Exocet.",
             "name":"Bernard Ye",
             "title": "Directeur communication"
         },
         {
             "image": "justinL.jpg",
-            "bio": "",
+            "bio": "Je suis responsable de la gestion des finances de l'équipe et de la recherche de financement.",
             "name":"Justin Lamouche",
             "title": "Trésorier"
         }
@@ -28,13 +28,13 @@
     "communication": [
         {
             "image": "tiphaine.jpg",
-            "bio": "",
+            "bio": "En tant que membre de l'équipe communication, je réalise des publications pour promouvoir la mission d'Exocet!",
             "name":"Tiphaine Le Rhun",
             "title": "Membre"
         },
         {
             "image": "tatianaR.jpg",
-            "bio": "",
+            "bio": "Mon rôle est defaire rayonner l'équipe Exocet sur les dofférentes plateformes.",
             "name":"Tatiana Rudenok",
             "title": "Membre"
         }
@@ -48,13 +48,13 @@
         },
         {
             "image": "dorianBernard.jpg",
-            "bio": "",
+            "bio": "Je m'occupe de la gestion de l'énergie du bateau avec les autres membres de l'équipe.",
             "name":"Dorian Bernard",
             "title": "Membre"
         },
         {
             "image": "alain.jpg",
-            "bio": "",
+            "bio": "Je m'occupe de la gestion de l'énergie du bateau avec les autres membres de l'équipe.",
             "name":"Alain Giresse Ndongo Ndongo",
             "title": "Membre"
         },
@@ -66,7 +66,7 @@
         },
         {
             "image": "justinT.jpg",
-            "bio": "",
+            "bio": "l'énergie est un sujet qui me passionne et je suis ravi de pouvoir travailler sur ce projet.",
             "name":"Justin Tassé",
             "title": "Membre"
         }
@@ -86,19 +86,19 @@
         },
         {
             "image": "gabrielS.jpg",
-            "bio": "",
+            "bio": "Je m'occupe de la gestion des systèmes embarqués du bateau",
             "name":"Gabriel Sabérian",
             "title": "Membre"
         },
         {
             "image": "diego.jpg",
-            "bio": "",
+            "bio": "Dans l'équipe embarqué, on s'occupe de tout ce qui est code et PCB.",
             "name":"Diego Campos",
             "title": "Membre"
         },
         {
             "image": "lucPison.jpg",
-            "bio": "",
+            "bio": "Je travaille avec les autres membres de l'équipe embarqué pour concevoir et tester les circuits imprimés.",
             "name":"Luc Pison",
             "title": "Membre"
         }
@@ -106,55 +106,55 @@
     "structure" : [
         {
             "image": "joanLP.jpg",
-            "bio": "",
+            "bio": "Je m'occupe de la gestion de la structure du bateau et de la fabrication en atelier des projets.",
             "name":"Joan Le Pouhaër",
             "title": "Chef d'équipe"
         },
         {
             "image": "gael.jpg",
-            "bio": "",
+            "bio": "Je suis principalement responsable de la chaise du bateau et de la fabrication en atelier des projets.",
             "name":"Gael Lavigne-Champagne",
             "title": "Membre"
         },
         {
             "image": "thomasB.jpg",
-            "bio": "",
+            "bio": "Je travailler sur la conception et la fabrication de la structure du bateau.",
             "name":"Thomas Bourque",
             "title": "Membre"
         },
         {
             "image": "chloe.jpg",
-            "bio": "",
+            "bio": "Mon rôle, avec les autres membre de l'équipe, est de m'assurer que la structure du bateau est solide et sécuritaire.",
             "name":"Chloé Walker",
             "title": "Membre"
         },
         {
             "image": "arnaultLibert.jpg",
-            "bio": "",
+            "bio": "Je m'occupe de la gestion de la structure du bateau.",
             "name":"Arnault Libert",
             "title": "Membre"
         },
         {
             "image": "laurentDesmarais.jpg",
-            "bio": "",
+            "bio": "je travaille sur les coques et la structure du bateau.",
             "name":"Laurent Desmarais",
             "title": "Membre"
         },
         {
             "image": "theoD.jpg",
-            "bio": "",
+            "bio": "En tant que membre de l'équipe structure, je m'assure que le bateau à tout ce qui lui faut côté structurel.",
             "name":"Théo Dantard",
             "title": "Membre"
         },
         {
             "image": "nicolasPC.jpg",
-            "bio": "",
+            "bio": "je travaille sur la gestion de la structure du bateau et de la fabrication en atelier des projets.",
             "name":"Nicolas Pardo Cabrera",
             "title": "Membre"
         },
         {
             "image": "gabrielMC.jpg",
-            "bio": "",
+            "bio": "je suis passionné par l'aspect structurel de notre projet et je travaille sur la fabrication en atelier du bateau",
             "name":"Gabriel Morales Chaurette",
             "title": "Membre"
         }
@@ -168,7 +168,7 @@
         },
         {
             "image": "mathilda.jpg",
-            "bio": "Membre passionné par le logiciel wowowowow",
+            "bio": "Membre passionné par le logiciel",
             "name":"Mathilda Herrell",
             "title": "Membre"
         },
@@ -180,7 +180,7 @@
         },
         {
             "image": "rosalie.jpg",
-            "bio": "Je contribue à la conception et au developpement du site web",
+            "bio": "Je travail à la conception et au developpement du site web avec les autres membres de l'équipe logiciel.",
             "name":"Rosalie Lamoureux",
             "title": "Membre"
         }
