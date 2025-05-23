@@ -14,7 +14,7 @@ function Dropdown() {
 
   return (
     <div className="team-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <p><Link to="/Team" className="page-link">Nos Équipes</Link></p>
+          <p><Link to="/Team2025" className="page-link">Nos Équipes</Link></p>
           {/* <p className="page-link" onClick={toggleDropdown}>Nos équipes</p> */}
           {hovered && (<div className="dropdown-container">
           {/* {(clicked || hovered) && <div className="dropdown-container"> */}

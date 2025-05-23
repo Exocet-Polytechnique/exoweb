@@ -1,6 +1,7 @@
 .team-page {
     font-family: 'Josefin Sans', sans-serif;
     color: rgba(193, 39, 54, 1);
+    min-width: 350px;
 }
 
 .team-header {
@@ -40,4 +41,13 @@
     margin-left: auto;
     margin-right: auto;
     height: 520px;
+}
+@media (max-width: 500px) {
+    #equipeImage {
+        display: none;
+    }
+
+    .team-subtitle {
+        justify-self: center;
+    }
 }
