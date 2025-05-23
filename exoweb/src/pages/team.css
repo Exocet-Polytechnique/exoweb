@@ -48,7 +48,6 @@
     }
 
     .team-subtitle {
-        width: min-content;
         justify-self: center;
     }
 }
