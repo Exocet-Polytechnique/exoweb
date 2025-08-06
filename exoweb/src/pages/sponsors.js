@@ -8,8 +8,8 @@ import corte from '../img/misc/vec_corte.svg';
 import goelette from '../img/misc/vec_goelette.svg';
 import ketch from '../img/misc/vec_ketch.svg';
 import sloop from '../img/misc/vec_sloop.svg';
-import french_sponsor_document_2024 from '../documents/french_sponsor_document_2024.pdf';
-import english_sponsor_document_2024 from '../documents/english_sponsor_document_2024.pdf';
+import french_sponsor_document from '../documents/french_sponsor_document.pdf';
+import english_sponsor_document from '../documents/english_sponsor_document.pdf';
 import swagelok from '../img/misc/swagelok.svg';
 import polytechnique from '../img/misc/polytechnique.svg';
 import faie from '../img/misc/faie.svg';
@@ -37,10 +37,10 @@ function Sponsors() {
         // Logic to handle the download based on the selected language
         if (language === "french") {
             // Download the French document
-            window.open(french_sponsor_document_2024, "_blank");
+            window.open(french_sponsor_document, "_blank");
         } else if (language === "english") {
             // Download the English document
-            window.open(english_sponsor_document_2024, "_blank");
+            window.open(english_sponsor_document, "_blank");
         }
     };
 
