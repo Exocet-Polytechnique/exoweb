@@ -17,11 +17,14 @@ function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  let lastScroll = 0;
   useEffect(() => {
     const handleScroll = () => {
+      const now = Date.now();
+      if (now - lastScroll < 75) return;
+      lastScroll = now;
       if (window.innerWidth <= MOBILE_BREAKPOINT || !exocetTitleRef.current || !imageRef.current || !phraseRef.current || !navBarRef.current) return;
-
-      if (document.body.scrollTop > SCROLLDOWN_BREAKPOINT || document.documentElement.scrollTop > SCROLLDOWN_BREAKPOINT) {
+      if (window.scrollY > SCROLLDOWN_BREAKPOINT) {
         exocetTitleRef.current.style.fontSize = "30px";
         imageRef.current.style.width = "30px";
         phraseRef.current.style.display = "none";
