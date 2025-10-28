@@ -21,7 +21,7 @@ function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       const now = Date.now();
-      if (now - lastScroll < 75) return;
+      if (now - lastScroll < 200) return;
       lastScroll = now;
       if (window.innerWidth <= MOBILE_BREAKPOINT || !exocetTitleRef.current || !imageRef.current || !phraseRef.current || !navBarRef.current) return;
       if (window.scrollY > SCROLLDOWN_BREAKPOINT) {

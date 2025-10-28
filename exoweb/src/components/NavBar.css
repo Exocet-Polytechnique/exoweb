@@ -15,12 +15,14 @@
 }
 
 #ExocetTitle {
-    transition: font-size 0.3s ease; 
+    transform-origin: left center;
+    transition: transform 0.1s ease;
 }
 
 
 #image {
-    transition: width 0.3s ease, height 0.3s ease; 
+    transform-origin: left center;
+    transition: transform 0.3s ease;
 }
 
 .home .navBar{
