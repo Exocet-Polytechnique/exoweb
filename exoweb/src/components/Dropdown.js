@@ -14,16 +14,18 @@ function Dropdown() {
 
   return (
     <div className="team-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <p><Link to="/Team2025" className="page-link">Nos Équipes</Link></p>
+          <p><Link to="/Team2026" className="page-link">Nos Équipes</Link></p>
           {/* <p className="page-link" onClick={toggleDropdown}>Nos équipes</p> */}
           {hovered && (<div className="dropdown-container">
           {/* {(clicked || hovered) && <div className="dropdown-container"> */}
+            <Link to="/Team2026">2026</Link>
+            <Link to="/Team2025">2025</Link>
             <Link to="/Team">2024</Link>
-            <Link to="/Team">2023</Link>
+            {/* <Link to="/Team">2023</Link>
             <Link to="/Team">2022</Link>
             <Link to="/Team">2021</Link>
             <Link to="/Team">2020</Link>
-            <Link to="/Team">2019</Link>
+            <Link to="/Team">2019</Link> */}
             </div>)}
         </div>
   )
