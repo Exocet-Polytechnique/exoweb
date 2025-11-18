@@ -23,12 +23,14 @@ function NavBar() {
 
       if (document.body.scrollTop > SCROLLDOWN_BREAKPOINT || document.documentElement.scrollTop > SCROLLDOWN_BREAKPOINT) {
         exocetTitleRef.current.style.fontSize = "30px";
-        imageRef.current.style.width = "30px";
+        imageRef.current.style.width = "40px";
+        imageRef.current.style.height = "40px";
         phraseRef.current.style.display = "none";
         navBarRef.current.style.opacity = BASE_OPACITY;
       } else {
         exocetTitleRef.current.style.fontSize = "60px";
         imageRef.current.style.width = "60px";
+        imageRef.current.style.height = "60px";
         phraseRef.current.style.display = "block";
         navBarRef.current.style.opacity = document.querySelector('.home') ? HOME_OPACITY : BASE_OPACITY;
       }
