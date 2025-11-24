@@ -1,40 +1,84 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './GalleryGrid.css';
 import CloseIcon from '../img/icons/close.svg';
 import images from '../img/gallery/compressed/imageData';
 
 const GalleryGrid = () => {
     const data = images.map((img, index) => ({
-        id: index + 1,
+        id: index,
         imgSrc: img.src,
-      }));
+    }));
+
     const [model, setModel] = React.useState(false);
-    const [tempImgSrc, setTempImgSrc] = React.useState('');
-    const getImg = (imgSrc) => {
-        console.warn(imgSrc);
-        setTempImgSrc(imgSrc);
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+
+    const openModal = (index) => {
+        setCurrentIndex(index);
         setModel(true);
-    }
+    };
+
+    const closeModal = () => {
+        setModel(false);
+    };
+
+    const showPrev = () => {
+        setCurrentIndex((prev) =>
+            prev === 0 ? data.length - 1 : prev - 1
+        );
+    };
+
+    const showNext = () => {
+        setCurrentIndex((prev) =>
+            prev === data.length - 1 ? 0 : prev + 1
+        );
+    };
+
+    useEffect(() => {
+        if (!model) return;
+
+        const handleKeyDown = (e) => {
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'Escape') closeModal();
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [model]);
 
     return (
         <div>
-        <div className={model ? "model open" : "model"}>
-            <img src={tempImgSrc} alt="gallery" />
-            <button className="close-button" onClick={() => setModel(false)}>
-            <img src={CloseIcon} alt="Close" />
-            </button>
-            
-        </div>
+            <div className={model ? "model open" : "model"}>
+                {model && (
+                    <>
+                        <img src={data[currentIndex].imgSrc} alt="gallery" />
 
-        <div className="gallery">
-            {data.map((item) => {
-                return (
-                    <div key={item.id} className="pics" onClick={() => getImg(item.imgSrc)}>
-                        <img src={item.imgSrc} style={{width: '100%'}} alt="gallery" className="gallery__img"/>
+                        <button className="close-button" onClick={closeModal}>
+                            <img src={CloseIcon} alt="Close" />
+                        </button>
+
+                        <button className="arrow left" onClick={showPrev}>
+                            ‹
+                        </button>
+
+                        <button className="arrow right" onClick={showNext}>
+                            ›
+                        </button>
+                    </>
+                )}
+            </div>
+
+            <div className="gallery">
+                {data.map((item, index) => (
+                    <div
+                        key={item.id}
+                        className="pics"
+                        onClick={() => openModal(index)}
+                    >
+                        <img src={item.imgSrc} style={{ width: '100%' }} alt="gallery" />
                     </div>
-                )
-            })}
-        </div>
+                ))}
+            </div>
         </div>
     );
 };
