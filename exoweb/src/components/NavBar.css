@@ -9,6 +9,7 @@
     color: rgba(255, 255, 255, 1);
     position: sticky;
     top: 0;
+    transition: 0.4s ease;
     z-index: 999;
     transition: 0.4s;
     min-width: 320px;
