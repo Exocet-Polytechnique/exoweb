@@ -18,8 +18,11 @@ const images = [
     { name: 'team_spirit_22', src: require('./team_spirit_22.jpg') },
     { name: 'computer_work_atelier', src: require('./computer_work_atelier.jpg') },
     { name: 'close_up', src: require('./close_up.jpg') },
-    { name: 'empty_boat_22', src: require('./empty_boat_22.jpg') },
     { name: 'wide_angle_atelier_22', src: require('./wide_angle_atelier_22.jpg') },
+    { name: 'mathilda', src: require('./mathilda.jpg') },
+    { name: 'chalet', src: require('./chalet.jpg') },
+    { name: 'IMG_2810', src: require('./IMG_2810.jpg') },
+    { name: 'IMG_8364', src: require('./IMG_8364.jpg') }
   ];
   
   const shuffleArray = (array) => {

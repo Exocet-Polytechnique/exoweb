@@ -1,6 +1,7 @@
 export const EXOTITLE = 'EXOCET';
 export const MOBILE_BREAKPOINT = 500;
-export const SCROLLDOWN_BREAKPOINT = 50;
+export const BREAKPOINT_HIDE = 50;
+export const BREAKPOINT_SHOW_SMALL = 200; 
 
 export const HOME = 'Accueil';
 export const SPONSOR = 'Commanditaires'

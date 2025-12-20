@@ -3,7 +3,7 @@ import './NavBar.css';
 import { Link } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
 import fishImage from '../img/misc/logo_exocet.png';
-import { EXOTITLE, MOBILE_BREAKPOINT, SCROLLDOWN_BREAKPOINT, HOME, SPONSOR, CONTACT, GALLERY, BASE_OPACITY, HOME_OPACITY } from '../constant/NavBar';
+import { EXOTITLE, MOBILE_BREAKPOINT, HOME, SPONSOR, CONTACT, GALLERY, BASE_OPACITY, HOME_OPACITY, BREAKPOINT_HIDE, BREAKPOINT_SHOW_SMALL} from '../constant/NavBar';
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,31 +17,49 @@ function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.innerWidth <= MOBILE_BREAKPOINT || !exocetTitleRef.current || !imageRef.current || !phraseRef.current || !navBarRef.current) return;
+useEffect(() => {
+  const handleScroll = () => {
+    if (
+      window.innerWidth <= MOBILE_BREAKPOINT ||
+      !exocetTitleRef.current ||
+      !imageRef.current ||
+      !phraseRef.current ||
+      !navBarRef.current
+    ) return;
 
-      if (document.body.scrollTop > SCROLLDOWN_BREAKPOINT || document.documentElement.scrollTop > SCROLLDOWN_BREAKPOINT) {
-        exocetTitleRef.current.style.fontSize = "30px";
-        imageRef.current.style.width = "40px";
-        imageRef.current.style.height = "40px";
-        phraseRef.current.style.display = "none";
-        navBarRef.current.style.opacity = BASE_OPACITY;
-      } else {
-        exocetTitleRef.current.style.fontSize = "60px";
-        imageRef.current.style.width = "60px";
-        imageRef.current.style.height = "60px";
-        phraseRef.current.style.display = "block";
-        navBarRef.current.style.opacity = document.querySelector('.home') ? HOME_OPACITY : BASE_OPACITY;
-      }
-    };
+    const scrollTop =
+      document.body.scrollTop || document.documentElement.scrollTop;
 
-    window.addEventListener('scroll', handleScroll);
+    if (scrollTop <= BREAKPOINT_HIDE) {
+      exocetTitleRef.current.style.fontSize = "60px";
+      imageRef.current.style.width = "60px";
+      imageRef.current.style.height = "60px";
+      phraseRef.current.style.display = "block";
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      navBarRef.current.style.opacity =
+        document.querySelector(".home") ? HOME_OPACITY : BASE_OPACITY;
+      navBarRef.current.style.transform = "translateY(0)";
+    }
+
+    else if (scrollTop > BREAKPOINT_HIDE && scrollTop <= BREAKPOINT_SHOW_SMALL) {
+      navBarRef.current.style.opacity = "0";
+      navBarRef.current.style.transform = "translateY(-100%)";
+    }
+
+    else {
+      exocetTitleRef.current.style.fontSize = "30px";
+      imageRef.current.style.width = "40px";
+      imageRef.current.style.height = "40px";
+      phraseRef.current.style.display = "none";
+
+      navBarRef.current.style.opacity = BASE_OPACITY;
+      navBarRef.current.style.transform = "translateY(0)";
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <header className="navBar" ref={navBarRef}>
