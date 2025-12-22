@@ -1,187 +1,132 @@
 {
     "executif" : [
         {
-            "image": "anneR.jpg",
-            "bio": "Je suis responsable de la gestion des ressources humaines et matérielles de l'équipe. J'assure aussi le bon fonctionnement des activités.",
-            "name":"Anne Raymond",
-            "title": "Directrice logistique"
+            "image": "1010004.jpg",
+            "linkedin" : " ",
+            "name":"Charles-Eric Lefebvre",
+            "title": "Directeur Logistique"
         },
-        {
-            "image": "emilienL.jpg",
-            "bio": "Je suis responsable de la gestion des projets techniques de l'équipe. J'organise les réunions et je fais le pont entre les différentes sections.",
-            "name":"Emilien Lemieux",
-            "title": "Directeur technique"
-        },
-        {
-            "image": "bernardY.jpg",
-            "bio": "Je suis responsable de la gestion des réseaux sociaux et de la création de contenu pour promouvoir l'équipe Exocet.",
-            "name":"Bernard Ye",
-            "title": "Directeur communication"
-        },
-        {
-            "image": "justinL.jpg",
-            "bio": "Je suis responsable de la gestion des finances de l'équipe et de la recherche de financement.",
-            "name":"Justin Lamouche",
-            "title": "Trésorier"
-        }
-    ],
-    "communication": [
-        {
-            "image": "tiphaine.jpg",
-            "bio": "En tant que membre de l'équipe communication, je réalise des publications pour promouvoir la mission d'Exocet!",
-            "name":"Tiphaine Le Rhun",
-            "title": "Membre"
-        },
-        {
-            "image": "tatianaR.jpg",
-            "bio": "Mon rôle est de faire rayonner l'équipe Exocet sur les différentes plateformes.",
+                {
+            "image": "1010074.jpg",
+            "linkedin" : " ",
             "name":"Tatiana Rudenok",
-            "title": "Membre"
+            "title": "Directrice des communications"
+        },
+        {
+            "image": "charles-francis.jpg",
+            "linkedin" : " ",
+            "name":"Charles-Francis Damedey",
+            "title": "Trésorier"
         }
     ],
     "energie" : [
         {
-            "image": "charlesEricL.jpg",
-            "bio": "J'organise les réunions et les tests à faire pour que notre système énergétique soit à jour. Je travaille aussi sur la fabrication en atelier des projets.",
-            "name":"Charles-Eric Lefebvre",
-            "title": "Chef d'équipe"
-        },
-        {
-            "image": "dorianBernard.jpg",
-            "bio": "Je m'occupe de la gestion de l'énergie du bateau avec les autres membres de l'équipe.",
-            "name":"Dorian Bernard",
+            "image": "laurentDesmarais.jpg",
+            "linkedin" : " ",
+            "name":"Laurent Desmarais",
             "title": "Membre"
         },
         {
-            "image": "alain.jpg",
-            "bio": "Je m'occupe de la gestion de l'énergie du bateau avec les autres membres de l'équipe.",
-            "name":"Alain Giresse Ndongo Ndongo",
-            "title": "Membre"
+            "image": "empty.jpg",
+            "linkedin" : " ",
+            "name":"Laurent Laurent",
+            "title": "VP-Local"
         },
         {
-            "image": "ivan.png",
-            "bio": "",
-            "name":"Ivan De la cuesta",
-            "title": "Membre"
-        },
-        {
-            "image": "justinT.jpg",
-            "bio": "L'énergie est un sujet qui me passionne et je suis ravi de pouvoir travailler sur ce projet.",
-            "name":"Justin Tassé",
+            "image": "01010038.jpg",
+            "linkedin" : " ",
+            "name":"Ludine Franco",
             "title": "Membre"
         }
+
     ],
     "embarque" : [
         {
-            "image": "EliotF.jpg",
-            "bio": "J'organise et je supervise les réunions et les projets pour l'équipe d'embarqué. J'aide aussi à concevoir les circuits électriques du bateau.",
+            "image": "1010026.jpg",
+            "linkedin" : " ",
             "name":"Eliot Fondère",
-            "title": "Chef d'équipe"
+            "title": "VP-Embarqué"
         },
         {
             "image": "guillaumeC.jpg",
-            "bio": "Je m'occupe du design des circuits imprimés et je synthétise l'information lors de nos rencontres d'équipe.",
+            "linkedin" : " ",
             "name":"Guillaume Chénier",
-            "title": "Secrétaire et assistant du chef d'équipe"
+            "title": "Membre"
         },
         {
-            "image": "gabrielS.jpg",
-            "bio": "Je m'occupe de la gestion des systèmes embarqués du bateau",
+            "image": "01010054.jpg",
+            "linkedin" : " ",
+            "name":"Diego Campos",
+            "title": "VP-Événements"
+        },
+        {
+            "image": "PXL_20251124_165128239.PORTRAIT",
+            "linkedin" : " ",
+            "name":"Nicolas Stan",
+            "title": "Membre"
+        },
+        {
+            "image": "01010045.jpg",
+            "linkedin" : " ",
             "name":"Gabriel Sabérian",
             "title": "Membre"
         },
         {
-            "image": "diego.jpg",
-            "bio": "Dans l'équipe embarqué, on s'occupe de tout ce qui est code et PCB.",
-            "name":"Diego Campos",
+            "image": "01010043.jpg",
+            "linkedin" : " ",
+            "name":"Romain Stryckman",
             "title": "Membre"
         },
         {
-            "image": "lucPison.jpg",
-            "bio": "Je travaille avec les autres membres de l'équipe embarqué pour concevoir et tester les circuits imprimés.",
-            "name":"Luc Pison",
+            "image": "01010040.jpg",
+            "linkedin" : " ",
+            "name":"Clément Jevardat de Fombelle",
             "title": "Membre"
         }
     ],
     "structure" : [
         {
-            "image": "joanLP.jpg",
-            "bio": "Je m'occupe de la gestion de la structure du bateau et de la fabrication en atelier des projets.",
-            "name":"Joan Le Pouhaër",
-            "title": "Chef d'équipe"
-        },
-        {
-            "image": "gael.jpg",
-            "bio": "Je suis principalement responsable de la chaise du bateau et de la fabrication en atelier des projets.",
-            "name":"Gael Lavigne-Champagne",
+            "image": "01010041.jpg",
+            "linkedin" : " ",
+            "name":"Jorian Ducharme-Dionne",
             "title": "Membre"
         },
         {
-            "image": "thomasB.jpg",
-            "bio": "Je travail sur la conception et la fabrication de la structure du bateau.",
-            "name":"Thomas Bourque",
+            "image": "01010059-02.jpg",
+            "linkedin" : " ",
+            "name":"Liliane Leclerc-Ko",
             "title": "Membre"
         },
         {
-            "image": "chloe.jpg",
-            "bio": "Mon rôle, avec les autres membre de l'équipe, est de m'assurer que la structure du bateau est solide et sécuritaire.",
-            "name":"Chloé Walker",
+            "image": "Thumbnail_20251009...",
+            "linkedin" : " ",
+            "name":"Émilie Huard",
             "title": "Membre"
         },
         {
-            "image": "arnaultLibert.jpg",
-            "bio": "Je m'occupe de la gestion de la structure du bateau.",
-            "name":"Arnault Libert",
+            "image": "01010061.jpg",
+            "linkedin" : " ",
+            "name":"Victor Lesage",
             "title": "Membre"
         },
         {
-            "image": "laurentDesmarais.jpg",
-            "bio": "Je travaille sur les coques et la structure du bateau.",
-            "name":"Laurent Desmarais",
-            "title": "Membre"
-        },
-        {
-            "image": "theoD.jpg",
-            "bio": "En tant que membre de l'équipe structure, je m'assure que le bateau à tout ce qui lui faut côté structurel.",
-            "name":"Théo Dantard",
-            "title": "Membre"
-        },
-        {
-            "image": "nicolasPC.jpg",
-            "bio": "Je travaille sur la gestion de la structure du bateau et de la fabrication en atelier des projets.",
-            "name":"Nicolas Pardo Cabrera",
-            "title": "Membre"
-        },
-        {
-            "image": "gabrielMC.jpg",
-            "bio": "Je suis passionné par l'aspect structurel de notre projet et je travaille sur la fabrication en atelier du bateau.",
-            "name":"Gabriel Morales Chaurette",
+            "image": "01010058.jpg",
+            "linkedin" : " ",
+            "name":"Félix Milette",
             "title": "Membre"
         }
     ],
     "logiciel": [
         {
-            "image": "charles2025.jpg",
-            "bio": "Je m'assure de la maintenance et l'hébergement du site web d'Exocet. Je guide aussi l'équipe logiciel afin d'arriver à nos objectifs communs.",
-            "name":"Charles-Francis Damedey",
-            "title": "Chef d'équipe"
-        },
-        {
-            "image": "mathilda.jpg",
-            "bio": "Membre passionné par le logiciel.",
-            "name":"Mathilda Herrell",
-            "title": "Membre"
-        },
-        {
-            "image": "noemie.jpg",
-            "bio": "Je contribue à la conception et au developpement du site web.",
-            "name":"Noémie Hélias",
-            "title": "Membre"
-        },
-        {
             "image": "rosalie.jpg",
-            "bio": "Je travail à la conception et au developpement du site web avec les autres membres de l'équipe logiciel.",
+            "linkedin" : " ",
             "name":"Rosalie Lamoureux",
+            "title": "VP-Logiciel"
+        },
+        {
+            "image": "empty.jpg",
+            "linkedin" : " ",
+            "name":"Aiya Ben Ouhida",
             "title": "Membre"
         }
     ]
