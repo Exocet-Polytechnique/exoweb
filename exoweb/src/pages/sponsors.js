@@ -8,6 +8,7 @@ import corte from '../img/misc/vec_corte.svg';
 import goelette from '../img/misc/vec_goelette.svg';
 import ketch from '../img/misc/vec_ketch.svg';
 import sloop from '../img/misc/vec_sloop.svg';
+import ivi from '../img/misc/IVI.png';
 import french_sponsor_document from '../documents/french_sponsor_document.pdf';
 import english_sponsor_document from '../documents/english_sponsor_document.pdf';
 import swagelok from '../img/misc/swagelok.svg';
@@ -96,6 +97,7 @@ function Sponsors() {
                         <img src={polyelan} alt="polyelan logo" className="logo polyelan-logo"/>
                         <img src={aep} alt="aep logo" className="logo aep-logo"/>
                         <img src={cirodd} alt="cirodd logo" className="logo cirodd-logo"/>
+                        <img src={ivi} alt="ivi logo" className="logo ivi-logo"/>
                         <img src={sloop} alt="sloop vector"/>
                     </div>
                 </div>
