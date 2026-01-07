@@ -21,7 +21,7 @@ function Home() {
             <div className="wave-text-container">
                 <img src={bateau1} alt="bateau 1" className="wave-boat"/>
                 <p className="wave-text">
-                Exocet est une société technique de la Polytechnique de Montréal qui a pour mission de construire un catamaran à énergie renouvelable. Après avoir participé au Monaco Energy Boat Challenge en 2022 avec un bâteau alimenté à l’électricité, Exocet a décidé de relever le défi de concevoir un catamaran fonctionnant avec de l’hydrogène. Deux ans plus tard, nous sommes fiers de vous présenter le premier catamaran en Amérique propulsé à l’hydrogène.
+                Exocet est une société technique de Polytechnique de Montréal qui a pour mission de construire un catamaran à énergie renouvelable. Après avoir participé au Monaco Energy Boat Challenge en 2022 avec un bâteau alimenté à l’électricité, Exocet a décidé de relever le défi de concevoir un catamaran fonctionnant avec de l’hydrogène. Deux ans plus tard, nous sommes fiers de vous présenter le premier catamaran en Amérique propulsé à l’hydrogène.
                     </p>
                 <img src={wave} alt="vague" className="homepage-wave"/>
             </div>
