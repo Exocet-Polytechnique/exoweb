@@ -95,3 +95,28 @@
     width: 5rem;
     height: 5rem;
 }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(193, 39, 54);
+  background-color: aliceblue;
+  border: none;
+  font-size: 3rem;
+  padding: 0 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: rgb(300, 39, 54);
+}
