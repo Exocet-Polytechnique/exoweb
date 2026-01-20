@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
 import Footer from "../components/Footer";
 import StudentCard from "../components/StudentCard";
-import Equipe from '../img/team/2025/equipe2025.jpg';
+import Equipe from '../img/team/2026/equipe2026.jpg';
 import "./team.css"
 import equipe from '../data/team2026.json';
 
@@ -15,15 +15,13 @@ function Team2026() {
     const equipeEnergie = equipe.energie;
     const equipeStructure = equipe.structure;
     const equipeLogiciel = equipe.logiciel;
-    const equipeCommunication = equipe.communication;
 
     const renderTeamSection = (title, team) => (
         <div className="member-type-container">
           <p className="team-subtitle">{title}</p>
           <div className="cards-container">
             {team.map((student, index) => {
-            // TODO: CHANGER POUR 2026
-              const imagePath = require(`../img/team/2025/${student.image}`);
+              const imagePath = require(`../img/team/2026/${student.image}`);
               return (
                 <StudentCard
                   key={index}
@@ -46,7 +44,6 @@ function Team2026() {
             <p className="team-header">Équipe 2026</p>
             <img src={Equipe} alt="Équipe Complete" id="equipeImage"></img>
             {renderTeamSection("Exécutif", executif)}
-            {renderTeamSection("Équipe Communication", equipeCommunication)}
             {renderTeamSection("Équipe Embarqué", equipeEmbarque)}
             {renderTeamSection("Équipe Énergie", equipeEnergie)}
             {renderTeamSection("Équipe Structure", equipeStructure)}
