@@ -2,19 +2,19 @@
     "executif" : [
         {
             "image": "1010004.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/charles-eric-lefebvre/edit/forms/next-action/after-connect-add-position/",
             "name":"Charles-Eric Lefebvre",
             "title": "Directeur Logistique"
         },
                 {
             "image": "1010074.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/tatiana-rudenok/",
             "name":"Tatiana Rudenok",
             "title": "Directrice des communications"
         },
         {
             "image": "charles-francis.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/cfdamd/",
             "name":"Charles-Francis Damedey",
             "title": "Trésorier"
         }
@@ -22,19 +22,19 @@
     "energie" : [
         {
             "image": "laurentDesmarais.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://ca.linkedin.com/in/laurent-desmarais-b8ab34209/en",
             "name":"Laurent Desmarais",
             "title": "Membre"
         },
         {
-            "image": "empty.jpg",
+            "image": "01010035.jpg",
             "linkedin" : " ",
-            "name":"Laurent Laurent",
+            "name":"Laurent Lambert",
             "title": "VP-Local"
         },
         {
             "image": "01010038.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/ludine-franco-639a38382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             "name":"Ludine Franco",
             "title": "Membre"
         }
@@ -43,43 +43,43 @@
     "embarque" : [
         {
             "image": "1010026.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/efondere/",
             "name":"Eliot Fondère",
             "title": "VP-Embarqué"
         },
         {
             "image": "guillaumeC.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/guillaume-chenier",
             "name":"Guillaume Chénier",
             "title": "Membre"
         },
         {
             "image": "01010054.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/diego-campos-aa2806166/",
             "name":"Diego Campos",
             "title": "VP-Événements"
         },
         {
             "image": "PXL_20251124_165128239.PORTRAIT",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/nicolas-stan",
             "name":"Nicolas Stan",
             "title": "Membre"
         },
         {
             "image": "01010045.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/gabriel-sab%C3%A9rian-079038346/",
             "name":"Gabriel Sabérian",
             "title": "Membre"
         },
         {
             "image": "01010043.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/romain-stryckman-459a28337/",
             "name":"Romain Stryckman",
             "title": "Membre"
         },
         {
             "image": "01010040.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://ca.linkedin.com/in/cl%C3%A9ment-jevardat-de-fombelle-346a0333b/en",
             "name":"Clément Jevardat de Fombelle",
             "title": "Membre"
         }
@@ -87,19 +87,19 @@
     "structure" : [
         {
             "image": "01010041.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/jorian-ducharme-dionne-39a065385/",
             "name":"Jorian Ducharme-Dionne",
             "title": "Membre"
         },
         {
             "image": "01010059-02.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/liliane-leclerc-ko-45a532327/",
             "name":"Liliane Leclerc-Ko",
             "title": "Membre"
         },
         {
             "image": "Thumbnail_20251009...",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/emile-huard-7652a632b/",
             "name":"Émilie Huard",
             "title": "Membre"
         },
@@ -119,13 +119,13 @@
     "logiciel": [
         {
             "image": "rosalie.jpg",
-            "linkedin" : " ",
+            "linkedin" : "https://www.linkedin.com/in/rosalie-lamoureux-6802a92a2/",
             "name":"Rosalie Lamoureux",
             "title": "VP-Logiciel"
         },
         {
-            "image": "empty.jpg",
-            "linkedin" : " ",
+            "image": "1-a35112b5.jpg",
+            "linkedin" : "https://www.linkedin.com/in/aiya-bo-8a4931297/",
             "name":"Aiya Ben Ouhida",
             "title": "Membre"
         }
