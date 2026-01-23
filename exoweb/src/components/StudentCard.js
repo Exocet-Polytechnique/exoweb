@@ -40,9 +40,12 @@ function StudentCard(props) {
         <div className="student-card">
             <div className="picture-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <img src={image} alt="Student" className="student-image" />
-                {visible && <div className="description-cover" style={{height, top: `calc(100% - ${height}px)`}}>
+                {
+                // TODO: supprimer cette partie
+                
+                /* {visible && <div className="description-cover" style={{height, top: `calc(100% - ${height}px)`}}>
                     <p className="description-text" style={{height: "75%"}}>{bio}</p>
-                </div>}
+                </div>} */}
             </div>
             <p className="student-name">{name}</p>
             <p className="student-title">{title}</p>
