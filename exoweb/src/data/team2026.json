@@ -42,7 +42,7 @@
     ],
     "embarque" : [
         {
-            "image": "01010026.jpg",
+            "image": "01010026.png",
             "linkedin" : "https://www.linkedin.com/in/efondere/",
             "name":"Eliot Fondère",
             "title": "Directeur Embarqué"
@@ -60,7 +60,7 @@
             "title": "Directeur Événements"
         },
         {
-            "image": "PXL_20251124_165128239.PORTRAIT.jpg",
+            "image": "PXL_20251124_165128239.PORTRAIT.png",
             "linkedin" : "https://www.linkedin.com/in/nicolas-stan",
             "name":"Nicolas Stan",
             "title": "Membre"
@@ -82,9 +82,39 @@
             "linkedin" : "https://ca.linkedin.com/in/cl%C3%A9ment-jevardat-de-fombelle-346a0333b/en",
             "name":"Clément Jevardat de Fombelle",
             "title": "Membre"
+        },
+        {
+            "image": "01010007.jpg",
+            "linkedin" : "",
+            "name" : "Daphné Henry",
+            "title" : "Membre"
+        },
+        {
+            "image": "wilfried.png",
+            "linkedin" : "https://www.linkedin.com/in/wpoirier?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "name" : "Wilfred Poirier",
+            "title" : "Membre"
+        },
+        {
+            "image": "PXL_20251124_165158065.PORTRAIT.png",
+            "linkedin" : "",
+            "name" : "Victoria Doe",
+            "title" : "Membre"
+        },
+        {
+            "image": "PXL_20251124_165213063.PORTRAIT.png",
+            "linkedin" : "",
+            "name" : "Sylvain Arnauld",
+            "title" : "Membre"
         }
     ],
     "structure" : [
+        {
+            "image" : "PXL_20251124_174025971.PORTRAIT.ORIGINAL.png",
+            "linkedin" : "",
+            "name" : "Arnault Libert",
+            "title" : "Directeur Strcuture"
+        },
         {
             "image": "01010041.jpg",
             "linkedin" : "https://www.linkedin.com/in/jorian-ducharme-dionne-39a065385/",
@@ -98,7 +128,7 @@
             "title": "Membre"
         },
         {
-            "image": "thumbnail_20251009LinkedIn-091.webp",
+            "image": "thumbnail.png",
             "linkedin" : "https://www.linkedin.com/in/emile-huard-7652a632b/",
             "name":"Émilie Huard",
             "title": "Membre"
@@ -114,6 +144,12 @@
             "linkedin" : " ",
             "name":"Félix Milette",
             "title": "Membre"
+        },
+        {
+            "image" : "01010053.jpg",
+            "linkedin" : " ",
+            "name" : "Emile Doe",
+            "title " : "membre"
         }
     ],
     "logiciel": [
@@ -124,9 +160,15 @@
             "title": "Directrice Logiciel"
         },
         {
-            "image": "1-a35112b5.jpg",
+            "image": "aiya.png",
             "linkedin" : "https://www.linkedin.com/in/aiya-bo-8a4931297/",
             "name":"Aiya Ben Ouhida",
+            "title": "Membre"
+        },
+        {
+            "image": "01010050.jpg",
+            "linkedin" : "",
+            "name":"Mathilda Herrell",
             "title": "Membre"
         }
     ]
