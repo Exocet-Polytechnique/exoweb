@@ -6,7 +6,7 @@ import StudentCard from "../components/StudentCard";
 import Equipe from '../img/team/2026/equipe2026.jpg';
 import "./team.css"
 import equipe from '../data/team2026.json';
-
+import linkedinLogo from '../img/misc/linkedin.svg';
 
 function Team2026() {
 
@@ -29,6 +29,7 @@ function Team2026() {
                   bio={student.bio}
                   name={student.name}
                   title={student.title}
+                  linkedin={student.linkedin}
                 />
               );
             })}

@@ -32,7 +32,7 @@
     z-index: 100;
 }
 
-.description-cover {
+/* .description-cover {
     background-color: rgba(193, 39, 54, 1);
     width: 100%;
     height: auto;
@@ -44,7 +44,7 @@
     bottom: 0;
     left: 0;
     z-index: 2;
-}
+} */
 
 .picture-container {
     position: relative;
@@ -62,4 +62,37 @@
     max-width: 140px;
     height: 100%;
     position: absolute;
+}
+
+.linkedin-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.linkedin-logo-inline {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    max-width: 18px;
+}
+
+.linkedin-logo-inline:hover {
+    transform: scale(1.15);
+    opacity: 1;
 }

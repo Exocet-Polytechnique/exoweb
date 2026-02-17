@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import linkedinLogo from '../img/misc/blue_linkedin_logo.png';
 import './StudentCard.css';
 
 function StudentCard(props) {
@@ -6,6 +7,7 @@ function StudentCard(props) {
   const bio = props.bio;
   const name = props.name;
   const title = props.title;
+  const linkedin = props.linkedin;
   const [visible, setVisible] = useState(false);
   const [height, setHeight] = useState(0);
   const [rising, setIsRising] = useState(false);
@@ -40,15 +42,17 @@ function StudentCard(props) {
         <div className="student-card">
             <div className="picture-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <img src={image} alt="Student" className="student-image" />
-                {
-                // TODO: supprimer cette partie
-                
-                /* {visible && <div className="description-cover" style={{height, top: `calc(100% - ${height}px)`}}>
-                    <p className="description-text" style={{height: "75%"}}>{bio}</p>
-                </div>} */}
             </div>
-            <p className="student-name">{name}</p>
+            <span className="student-name-container">
+              <p className="student-name">{name}</p>
+              {linkedin && (
+                <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                  <img src={linkedinLogo} alt="LinkedIn" className="linkedin-logo-inline" />
+                </a>
+              )}
+            </span>
             <p className="student-title">{title}</p>
+            
         </div>
     );
 }
