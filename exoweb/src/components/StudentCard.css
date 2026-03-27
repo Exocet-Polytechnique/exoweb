@@ -32,7 +32,7 @@
     z-index: 100;
 }
 
-.description-cover {
+/* .description-cover {
     background-color: rgba(193, 39, 54, 1);
     width: 100%;
     height: auto;
@@ -44,7 +44,7 @@
     bottom: 0;
     left: 0;
     z-index: 2;
-}
+} */
 
 .picture-container {
     position: relative;
@@ -62,4 +62,14 @@
     max-width: 140px;
     height: 100%;
     position: absolute;
+}
+
+
+
+.student-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
 }

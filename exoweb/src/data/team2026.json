@@ -1,0 +1,153 @@
+{
+    "executif" : [
+        {
+            "image": "01010004.jpg",
+            "name":"Charles-Eric Lefebvre",
+            "title": "Directeur Logistique"
+        },
+        {
+            "image": "joanLP.jpg",
+            "name":"Joan Le Pouhaër",
+            "title": "Directeur Technique"
+        },
+        {
+            "image": "01010074.jpg",
+            "name":"Tatiana Rudenok",
+            "title": "Directrice des communications"
+        },
+        {
+            "image": "charles-francis.jpg",
+            "name":"Charles-Francis Damedey",
+            "title": "Trésorier"
+        }
+    ],
+    "energie" : [
+        {
+            "image": "laurentDesmarais.jpg",
+            "name":"Laurent Desmarais",
+            "title": "Membre"
+        },
+        {
+            "image": "01010035.jpg",
+            "name":"Laurent Lambert",
+            "title": "Responsable Local"
+        },
+        {
+            "image": "01010038.jpg",
+            "name":"Ludine Franco",
+            "title": "Membre"
+        }
+
+    ],
+    "embarque" : [
+        {
+            "image": "01010026.png",
+            "name":"Eliot Fondère",
+            "title": "Directeur Embarqué"
+        },
+        {
+            "image": "guillaumeC.jpg",
+            "name":"Guillaume Chénier",
+            "title": "Membre"
+        },
+        {
+            "image": "01010054.jpg",
+            "name":"Diego Campos",
+            "title": "Directeur Événements"
+        },
+        {
+            "image": "PXL_20251124_165128239.PORTRAIT.png",
+            "name":"Nicolas Stan",
+            "title": "Membre"
+        },
+        {
+            "image": "01010045.jpg",
+            "name":"Gabriel Sabérian",
+            "title": "Membre"
+        },
+        {
+            "image": "01010043.jpg",
+            "name":"Romain Stryckman",
+            "title": "Membre"
+        },
+        {
+            "image": "01010040.jpg",
+            "name":"Clément Jevardat de Fombelle",
+            "title": "Membre"
+        },
+        {
+            "image": "01010007.jpg",
+            "name" : "Daphné Henry",
+            "title" : "Membre"
+        },
+        {
+            "image": "wilfried.png",
+            "name" : "Wilfred Poirier",
+            "title" : "Membre"
+        },
+        {
+            "image": "PXL_20251124_165158065.PORTRAIT.png",
+            "name" : "Victoria Doe",
+            "title" : "Membre"
+        },
+        {
+            "image": "PXL_20251124_165213063.PORTRAIT.png",
+            "name" : "Sylvain Arnauld",
+            "title" : "Membre"
+        }
+    ],
+    "structure" : [
+        {
+            "image" : "PXL_20251124_174025971.PORTRAIT.ORIGINAL.png",
+            "name" : "Arnault Libert",
+            "title" : "Directeur Strcuture"
+        },
+        {
+            "image": "01010041.jpg",
+            "name":"Jorian Ducharme-Dionne",
+            "title": "Membre"
+        },
+        {
+            "image": "01010059_02.jpg",
+            "name":"Liliane Leclerc-Ko",
+            "title": "Membre"
+        },
+        {
+            "image": "thumbnail.png",
+            "name":"Émilie Huard",
+            "title": "Membre"
+        },
+        {
+            "image": "01010061.jpg",
+            "name":"Victor Lesage",
+            "title": "Membre"
+        },
+        {
+            "image": "01010058.jpg",
+            "name":"Félix Milette",
+            "title": "Membre"
+        },
+        {
+            "image" : "01010053.jpg",
+            "name" : "Emile Doe",
+            "title" : "Membre"
+        }
+    ],
+    "logiciel": [
+        {
+            "image": "rosalie.jpg",
+            "name":"Rosalie Lamoureux",
+            "title": "Directrice Logiciel"
+        },
+        {
+            "image": "aiya.png",
+            "name":"Aiya Ben Ouhida",
+            "title": "Membre"
+        },
+        {
+            "image": "01010050.jpg",
+            "name":"Mathilda Herrell",
+            "title": "Membre"
+        }
+    ]
+}
