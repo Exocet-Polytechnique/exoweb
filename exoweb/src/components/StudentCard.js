@@ -1,13 +1,10 @@
 import React, {useState} from "react";
-import linkedinLogo from '../img/misc/blue_linkedin_logo.png';
 import './StudentCard.css';
 
 function StudentCard(props) {
   const image = props.image;
-  const bio = props.bio;
   const name = props.name;
   const title = props.title;
-  const linkedin = props.linkedin;
   const [visible, setVisible] = useState(false);
   const [height, setHeight] = useState(0);
   const [rising, setIsRising] = useState(false);
@@ -45,11 +42,6 @@ function StudentCard(props) {
             </div>
             <span className="student-name-container">
               <p className="student-name">{name}</p>
-              {linkedin && (
-                <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                  <img src={linkedinLogo} alt="LinkedIn" className="linkedin-logo-inline" />
-                </a>
-              )}
             </span>
             <p className="student-title">{title}</p>
             

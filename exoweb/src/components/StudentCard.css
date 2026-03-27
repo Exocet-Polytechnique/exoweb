@@ -64,15 +64,7 @@
     position: absolute;
 }
 
-.linkedin-link {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .student-name-container {
     display: flex;
@@ -80,19 +72,4 @@
     justify-content: center;
     gap: 6px;
     flex-wrap: nowrap;
-}
-
-.linkedin-logo-inline {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    cursor: pointer;
-    opacity: 0.85;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    max-width: 18px;
-}
-
-.linkedin-logo-inline:hover {
-    transform: scale(1.15);
-    opacity: 1;
 }
