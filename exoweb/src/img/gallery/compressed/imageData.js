@@ -22,7 +22,11 @@ const images = [
     { name: 'mathilda', src: require('./mathilda.jpg') },
     { name: 'chalet', src: require('./chalet.jpg') },
     { name: 'IMG_2810', src: require('./IMG_2810.jpg') },
-    { name: 'IMG_8364', src: require('./IMG_8364.jpg') }
+    { name: 'IMG_8364', src: require('./IMG_8364.jpg') },
+    { name: 'boat', src: require('./boat.JPG') },
+    { name: 'rawr', src: require('./rawr.JPG') },
+    { name: 'bepbop', src: require('./Bepbop.JPG') },
+    { name: 'IMG_9490', src: require('./IMG_9490.jpg') }
   ];
   
   const shuffleArray = (array) => {
