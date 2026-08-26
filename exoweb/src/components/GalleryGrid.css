@@ -1,122 +1,176 @@
-.gallery{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
+/* ===================================================
+   GRILLE D'IMAGES (MASONRY LAYOUT)
+   =================================================== */
+
+.gallery {
     column-count: 3;
-    padding: 0 12px;
-    margin-top: 12px;
+    column-gap: 20px;
+    padding: 0;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
 }
 
-.gallery .pics{
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
+/* Cartes individuelles des photos */
+.gallery .pics {
+    break-inside: avoid;
+    margin-bottom: 20px;
     cursor: pointer;
-    margin-bottom: 12px;
+    background-color: #ffffff;
+    padding: 6px; /* Effet cadres blancs */
+    border-radius: 16px;
+    border: 2px solid #e1e8f0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-.gallery .pics:hover{
-    filter: opacity(0.8);
+.gallery .pics img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px; /* Arrondi interne pour l'image */
+    transition: transform 0.3s ease;
 }
 
-@media (max-width: 991px){
-    .gallery{
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
+/* Effet au survol */
+.gallery .pics:hover {
+    transform: translateY(-5px);
+    border-color: rgba(193, 39, 54, 0.6);
+    box-shadow: 0 12px 24px rgba(193, 39, 54, 0.15);
+}
+
+.gallery .pics:hover img {
+    transform: scale(1.02);
+}
+
+/* Responsivité de la grille */
+@media (max-width: 991px) {
+    .gallery {
         column-count: 2;
+        column-gap: 16px;
     }
 }
 
-@media (max-width: 480px){
-    .gallery{
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
+@media (max-width: 550px) {
+    .gallery {
         column-count: 1;
     }
 }
 
-.model{
+
+/* ===================================================
+   MODAL / LIGHTBOX
+   =================================================== */
+
+.model {
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(240, 248, 255, 0.884);
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform .5s ease-in-out;
+    background-color: rgba(15, 23, 42, 0.85); /* Arrière-plan sombré élégant */
+    backdrop-filter: blur(8px); /* Effet de flou en arrière-plan */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     visibility: hidden;
     opacity: 0;
-    transform: scale(0);
-    overflow: hidden;
-    z-index: 999;
+    z-index: 1000;
 }
 
-.model.open{
+.model.open {
     visibility: visible;
     opacity: 1;
-    transform: scale(1);
 }
 
-.model img{
-    width: auto;
+/* Conteneur de l'image agrandie */
+.model-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-img {
     max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    display: block;
-    line-height: 0;
-    box-sizing: border-box;
-    padding: 20px 0 20px;
-    margin: 0 auto;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-.model.open svg {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 2rem;
-    height: 2rem;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
-    cursor: pointer;
-
-}
-
+/* Bouton Fermer (Croix) */
 .close-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.close-button img {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 5rem;
-    height: 5rem;
+    top: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: rgba(193, 39, 54, 0.9);
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 300;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 0;
+    padding: 0 0 3px 0; /* Alignement optique précis de la croix */
+    z-index: 1010;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.close-button:hover {
+    background-color: rgba(220, 38, 38, 1);
+    transform: scale(1.1);
+}
+
+/* Flèches de navigation (Centrage vertical parfait) */
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgb(193, 39, 54);
-  background-color:  rgba(240, 248, 255, 0);
-  border: none;
-  font-size: 3rem;
-  padding: 0 15px;
-  cursor: pointer;
-  z-index: 10;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1010;
+    line-height: 0;
+    padding: 0 0 5px 0; /* Ajustement optique vertical */
+    box-sizing: border-box;
+    transition: all 0.2s ease;
 }
 
 .arrow.left {
-  left: 10px;
+    left: 25px;
+    padding-right: 2px; /* Ajustement horizontal du chevrons gauche */
 }
 
 .arrow.right {
-  right: 10px;
+    right: 25px;
+    padding-left: 2px; /* Ajustement horizontal du chevrons droit */
 }
 
 .arrow:hover {
-  background-color: rgb(300, 39, 54);
+    background-color: rgba(193, 39, 54, 0.9);
+    border-color: rgba(193, 39, 54, 0.9);
+    transform: translateY(-50%) scale(1.1);
 }

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './GalleryGrid.css';
-import CloseIcon from '../img/icons/close.svg';
 import images from '../img/gallery/compressed/imageData';
 
 const GalleryGrid = () => {
@@ -21,13 +20,15 @@ const GalleryGrid = () => {
         setModel(false);
     };
 
-    const showPrev = () => {
+    const showPrev = (e) => {
+        e.stopPropagation();
         setCurrentIndex((prev) =>
             prev === 0 ? data.length - 1 : prev - 1
         );
     };
 
-    const showNext = () => {
+    const showNext = (e) => {
+        e.stopPropagation();
         setCurrentIndex((prev) =>
             prev === data.length - 1 ? 0 : prev + 1
         );
@@ -37,8 +38,8 @@ const GalleryGrid = () => {
         if (!model) return;
 
         const handleKeyDown = (e) => {
-            if (e.key === 'ArrowLeft') showPrev();
-            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev(e);
+            if (e.key === 'ArrowRight') showNext(e);
             if (e.key === 'Escape') closeModal();
         };
 
@@ -48,26 +49,47 @@ const GalleryGrid = () => {
 
     return (
         <div>
-            <div className={model ? "model open" : "model"}>
+            {/* Modal / Lightbox */}
+            <div 
+                className={model ? "model open" : "model"} 
+                onClick={closeModal}
+            >
                 {model && (
-                    <>
-                        <img src={data[currentIndex].imgSrc} alt="gallery" />
+                    <div className="model-content" onClick={(e) => e.stopPropagation()}>
+                        <img 
+                            src={data[currentIndex].imgSrc} 
+                            alt="Agrandissement galerie" 
+                            className="model-img"
+                        />
 
-                        <button className="close-button" onClick={closeModal}>
-                            <img src={CloseIcon} alt="Close" />
+                        <button 
+                            className="close-button" 
+                            onClick={closeModal}
+                            aria-label="Fermer"
+                        >
+                            ×
                         </button>
 
-                        <button className="arrow left" onClick={showPrev}>
+                        <button 
+                            className="arrow left" 
+                            onClick={showPrev}
+                            aria-label="Image précédente"
+                        >
                             ‹
                         </button>
 
-                        <button className="arrow right" onClick={showNext}>
+                        <button 
+                            className="arrow right" 
+                            onClick={showNext}
+                            aria-label="Image suivante"
+                        >
                             ›
                         </button>
-                    </>
+                    </div>
                 )}
             </div>
 
+            {/* Grille d'images */}
             <div className="gallery">
                 {data.map((item, index) => (
                     <div
@@ -75,7 +97,7 @@ const GalleryGrid = () => {
                         className="pics"
                         onClick={() => openModal(index)}
                     >
-                        <img src={item.imgSrc} style={{ width: '100%' }} alt="gallery" />
+                        <img src={item.imgSrc} alt={`Galerie ${index + 1}`} />
                     </div>
                 ))}
             </div>
