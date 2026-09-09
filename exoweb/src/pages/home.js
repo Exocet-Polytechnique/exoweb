@@ -1,39 +1,92 @@
-import "./home.css"
 import React from "react";
+import "./home.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import Countdown from "../components/Countdown";
-import wave from '../img/misc/wave_homepage.svg';
+
+// Images
 import bateaubg from '../img/misc/bateaubg.jpg';
 import bateau1 from '../img/misc/bateau1.jpg';
 import bateau2 from '../img/misc/bateau2.jpg';
 
 function Home() {
-    return (
-        <div className="home">
+  const stats = [
+    { number: "3", label: "Participations au Monaco Energy Boat Challenge" },
+    { number: "Top 1", label: "Équipe Nord-Américaine au MEBC 2026" },
+    { number: "25+", label: "Membres actifs" },
+    { number: "2019", label: "Depuis" }
+  ];
 
-            <NavBar/> {/* Add the NavBar component */}
-    
-            <img src={bateaubg} alt="bateau" className="bateau-background"/>
-            <div className="countdown-container">
-                <Countdown className="countdown-homepage"/>
-            </div>
-            <div className="wave-text-container">
-                <img src={bateau1} alt="bateau 1" className="wave-boat"/>
-                <p className="wave-text">
-                Exocet est une société technique de Polytechnique de Montréal qui a pour mission de construire un catamaran à énergie renouvelable. Après avoir participé au Monaco Energy Boat Challenge en 2022 avec un bâteau alimenté à l’électricité, Exocet a décidé de relever le défi de concevoir un catamaran fonctionnant avec de l’hydrogène. Deux ans plus tard, nous sommes fiers de vous présenter le premier catamaran en Amérique propulsé à l’hydrogène.
-                    </p>
-                <img src={wave} alt="vague" className="homepage-wave"/>
-            </div>
-            <div className="bottom-container">
-                <div className="bottom-text">
-                                Le Monaco Energy Boat Challenge est une compétition qui se déroule annuellement à Monaco. Cet évènement est une compétition universitaire de conception d’embarcations nautiques propulsées par des énergies renouvelables. Lors de cette épreuve, chaque équipe doit produire une analyse de cycle de vie et effectuer une présentation technique de leur prototype. Aussi, tous participants doivent participer à des courses nautiques, soit de vitesse, de slalom et d’endurance.
-                                </div>
-                                <img src={bateau2} alt="bateau 2" className="bottom-boat"/>
-            </div>
-            <Footer/> {/* Add the Footer component */}
+  return (
+    <div className="homepage">
+      <NavBar />
+
+      <img src={bateaubg} alt="bateau" className="bateau-background" />
+
+      {/* --- HERO SECTION --- */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">Exocet Polytechnique Montréal</h1>
+          <p className="hero-subtitle">
+            Une société technique passionnée par l'innovation nautique et la transition énergétique.
+          </p>
+
+          <a href="#about" className="hero-btn">
+            Découvrir notre équipe
+          </a>
+
+          {/* Cartes statistiques */}
+          <div className="stats-grid">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="stat-card">
+                <span className="stat-number">{stat.number}</span>
+                <span className="stat-label">{stat.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
-    )
+      </section>
+
+      {/* --- SECTION PRÉSENTATION & ÉPREUVES --- */}
+      <section id="about" className="main-content-section">
+        <h2 className="section-title">À Propos d'Exocet</h2>
+        <p className="section-subtitle">
+          Découvrez notre projet et notre participation aux compétitions internationales.
+        </p>
+
+        <div className="features-grid">
+          <div className="feature-card">
+            <div className="card-media">
+              <img src={bateau1} alt="Catamaran à Hydrogène" />
+            </div>
+            <div className="card-content">
+              <h3>Projet Hydrogène</h3>
+              <p>
+                Exocet a pour mission de construire un catamaran à énergie renouvelable. 
+                Après avoir participé au Monaco Energy Boat Challenge en 2022 avec un bateau alimenté à l’électricité, 
+                nous avons relevé le défi de concevoir le premier catamaran en Amérique propulsé à l’hydrogène.
+              </p>
+            </div>
+          </div>
+
+          <div className="feature-card">
+            <div className="card-media">
+              <img src={bateau2} alt="Monaco Energy Boat Challenge" />
+            </div>
+            <div className="card-content">
+              <h3>Monaco Energy Boat Challenge</h3>
+              <p>
+                Cette compétition universitaire internationale exige une analyse de cycle de vie et une présentation 
+                technique du prototype. Les équipes s'affrontent lors de courses nautiques de vitesse, 
+                de slalom et d’endurance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;
