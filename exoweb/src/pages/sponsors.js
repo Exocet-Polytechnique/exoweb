@@ -50,7 +50,7 @@ function Sponsors() {
           </p>
           <div className="buttons-container">
             <button id="french" onClick={() => handleDownload("french")}>
-              En français
+              En Français
               <img src={downloadLogo} alt="" className="download-symbol" />
             </button>
             <button id="english" onClick={() => handleDownload("english")}>
