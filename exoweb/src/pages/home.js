@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 // Images
-import bateaubg from '../img/misc/bateaubg.jpg';
+import bateaubg from '../img/misc/boat.JPG';
 import bateau1 from '../img/misc/bateau1.jpg';
 import bateau2 from '../img/misc/bateau2.jpg';
 
@@ -12,7 +12,7 @@ function Home() {
   const stats = [
     { number: "3", label: "Participations au Monaco Energy Boat Challenge" },
     { number: "Top 1", label: "Équipe Nord-Américaine au MEBC 2026" },
-    { number: "25+", label: "Membres actifs" },
+    { number: "20+", label: "Membres actifs" },
     { number: "2019", label: "Depuis" }
   ];
 

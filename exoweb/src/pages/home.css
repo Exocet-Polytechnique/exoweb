@@ -201,6 +201,25 @@
   line-height: 1.6;
 }
 
+.homepage .navBar {
+    background-color: rgba(193, 39, 54, 0.60);
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.homepage .navBar.scrolled {
+    background-color: rgb(193, 39, 54);
+}
+
+.homepage .navBar .dropdown-content { 
+    background-color: rgba(193, 39, 54, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.homepage .navBar.scrolled .dropdown-content {
+    background-color: rgb(193, 39, 54);
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .homepage .stats-grid {
