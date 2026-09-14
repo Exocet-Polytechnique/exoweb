@@ -26,7 +26,10 @@ const images = [
     { name: 'boat', src: require('./boat.JPG') },
     { name: 'rawr', src: require('./rawr.JPG') },
     { name: 'bepbop', src: require('./Bepbop.JPG') },
-    { name: 'IMG_9490', src: require('./IMG_9490.jpg') }
+    { name: 'IMG_9490', src: require('./IMG_9490.jpg') },
+    { name: 'arnaud', src: require('./arnaud.jpg') },
+    { name: 'rosalie', src: require('./rosalie.jpg') },
+    { name: 'lockin', src: require('./lockin.jpg') }
   ];
   
   const shuffleArray = (array) => {
