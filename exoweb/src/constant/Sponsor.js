@@ -1,1 +1,0 @@
-export const YEAR = "2025-2026"
