@@ -27,15 +27,18 @@ import aep from "../img/misc/aep.svg";
 import lojiq from "../img/misc/lojiq.svg";
 import cirodd from "../img/misc/cirodd.svg";
 
-import french_sponsor_document from "../documents/french_sponsor_document.pdf";
-import english_sponsor_document from "../documents/english_sponsor_document.pdf";
-
 function Sponsors() {
   const handleDownload = (language) => {
     if (language === "french") {
-      window.open(french_sponsor_document, "_blank");
+      window.open(
+        process.env.PUBLIC_URL + "/documents/Document de commandites Exocet 2025-2026.pdf",
+        "_blank"
+      );
     } else if (language === "english") {
-      window.open(english_sponsor_document, "_blank");
+      window.open(
+        process.env.PUBLIC_URL + "/documents/Exocet Sponsorship document 2025-2026.pdf",
+        "_blank"
+      );
     }
   };
 
