@@ -1,7 +1,6 @@
 # Script pour modifier le titre (métadonnées) des documents de commandites
 # afin que le nom soit propre lors de l'affichage/téléchargement
 
-import re
 from pypdf import PdfReader, PdfWriter
 
 
