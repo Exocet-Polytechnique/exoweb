@@ -79,7 +79,7 @@
 }
 
 .homepage .hero-btn:hover {
-  background-color: #1b263b;
+  background-color: rgba(193, 39, 54, 0.60);
   transform: translateY(-2px);
 }
 
