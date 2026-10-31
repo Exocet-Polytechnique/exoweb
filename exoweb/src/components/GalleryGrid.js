@@ -11,6 +11,24 @@ const GalleryGrid = () => {
     const [model, setModel] = React.useState(false);
     const [currentIndex, setCurrentIndex] = React.useState(0);
 
+    const getColumnCount = () => {
+        if (window.innerWidth <= 550) return 1;
+        if (window.innerWidth <= 991) return 2;
+        return 3;
+    };
+    const [columnCount, setColumnCount] = React.useState(getColumnCount);
+
+    useEffect(() => {
+        const handleResize = () => setColumnCount(getColumnCount());
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const columns = Array.from({ length: columnCount }, () => []);
+    data.forEach((item, index) => {
+        columns[index % columnCount].push({ ...item, index });
+    });
+
     const openModal = (index) => {
         setCurrentIndex(index);
         setModel(true);
@@ -91,13 +109,17 @@ const GalleryGrid = () => {
 
             {/* Grille d'images */}
             <div className="gallery">
-                {data.map((item, index) => (
-                    <div
-                        key={item.id}
-                        className="pics"
-                        onClick={() => openModal(index)}
-                    >
-                        <img src={item.imgSrc} alt={`Galerie ${index + 1}`} />
+                {columns.map((column, colIndex) => (
+                    <div key={colIndex} className="gallery-column">
+                        {column.map((item) => (
+                            <div
+                                key={item.id}
+                                className="pics"
+                                onClick={() => openModal(item.index)}
+                            >
+                                <img src={item.imgSrc} alt={`Galerie ${item.index + 1}`} />
+                            </div>
+                        ))}
                     </div>
                 ))}
             </div>

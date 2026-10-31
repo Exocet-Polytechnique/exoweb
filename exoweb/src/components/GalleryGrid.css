@@ -3,11 +3,17 @@
    =================================================== */
 
 .gallery {
-    column-count: 3;
-    column-gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
     padding: 0;
     max-width: 1200px;
     margin: 20px auto 0 auto;
+}
+
+.gallery-column {
+    flex: 1;
+    min-width: 0;
 }
 
 /* Cartes individuelles des photos */
@@ -49,14 +55,7 @@
 /* Responsivité de la grille */
 @media (max-width: 991px) {
     .gallery {
-        column-count: 2;
-        column-gap: 16px;
-    }
-}
-
-@media (max-width: 550px) {
-    .gallery {
-        column-count: 1;
+        gap: 16px;
     }
 }
 
