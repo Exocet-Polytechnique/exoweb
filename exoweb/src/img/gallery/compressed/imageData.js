@@ -1,35 +1,35 @@
 // src/img/gallery/imageData.js
 const images = [
-    { name: 'back_pic', src: require('./back_pic.jpg') },
-    { name: 'beach_22', src: require('./beach_22.jpg') },
-    { name: 'comp_22', src: require('./comp_22.jpg') },
-    { name: 'comp_water_22', src: require('./comp_water_22.jpg') },
-    { name: 'directors_speech', src: require('./directors_speech.jpg') },
-    { name: 'fc', src: require('./fc.jpg') },
-    { name: 'fc2', src: require('./fc2.jpg') },
-    { name: 'fire', src: require('./fire.jpg') },
-    { name: 'mathieu', src: require('./mathieu.jpg') },
-    { name: 'racer_22', src: require('./racer_22.jpg') },
-    { name: 'struct_22', src: require('./struct_22.jpg') },
-    { name: 'team23', src: require('./team23.jpg') },
-    { name: 'team_pic_inauguration', src: require('./team_pic_inauguration.jpg') },
-    { name: 'team_pic_inauguration2', src: require('./team_pic_inauguration2.jpg') },
-    { name: 'team_pic_lassonde', src: require('./team_pic_lassonde.jpg') },
-    { name: 'team_spirit_22', src: require('./team_spirit_22.jpg') },
-    { name: 'computer_work_atelier', src: require('./computer_work_atelier.jpg') },
-    { name: 'close_up', src: require('./close_up.jpg') },
-    { name: 'wide_angle_atelier_22', src: require('./wide_angle_atelier_22.jpg') },
-    { name: 'mathilda', src: require('./mathilda.jpg') },
-    { name: 'chalet', src: require('./chalet.jpg') },
-    { name: 'IMG_2810', src: require('./IMG_2810.jpg') },
-    { name: 'IMG_8364', src: require('./IMG_8364.jpg') },
-    { name: 'boat', src: require('./boat.JPG') },
-    { name: 'rawr', src: require('./rawr.JPG') },
-    { name: 'bepbop', src: require('./Bepbop.JPG') },
-    { name: 'IMG_9490', src: require('./IMG_9490.jpg') },
-    { name: 'arnaud', src: require('./arnaud.jpg') },
-    { name: 'rosalie', src: require('./rosalie.jpg') },
-    { name: 'lockin', src: require('./lockin.jpg') }
+    { name: 'back_pic_2023', src: require('./back_pic_2023.jpg') },
+    { name: 'beach_2022', src: require('./beach_2022.jpg') },
+    { name: 'comp_2022', src: require('./comp_2022.jpg') },
+    { name: 'comp_water_2022', src: require('./comp_water_2022.jpg') },
+    { name: 'directors_speech_2024', src: require('./directors_speech_2024.jpg') },
+    { name: 'fc_2023', src: require('./fc_2023.jpg') },
+    { name: 'fc2_2023', src: require('./fc2_2023.jpg') },
+    { name: 'fire_2022', src: require('./fire_2022.jpg') },
+    { name: 'mathieu_2023', src: require('./mathieu_2023.jpg') },
+    { name: 'racer_2022', src: require('./racer_2022.jpg') },
+    { name: 'struct_2022', src: require('./struct_2022.jpg') },
+    { name: 'team_2023', src: require('./team_2023.jpg') },
+    { name: 'team_pic_inauguration_2024', src: require('./team_pic_inauguration_2024.jpg') },
+    { name: 'team_pic_inauguration2_2024', src: require('./team_pic_inauguration2_2024.jpg') },
+    { name: 'team_pic_lassonde_2024', src: require('./team_pic_lassonde_2024.jpg') },
+    { name: 'team_spirit_2022', src: require('./team_spirit_2022.jpg') },
+    { name: 'computer_work_atelier_2023', src: require('./computer_work_atelier_2023.jpg') },
+    { name: 'close_up_2023', src: require('./close_up_2023.jpg') },
+    { name: 'wide_angle_atelier_2022', src: require('./wide_angle_atelier_2022.jpg') },
+    { name: 'mathilda_2025', src: require('./mathilda_2025.jpg') },
+    { name: 'chalet_2025', src: require('./chalet_2025.jpg') },
+    { name: 'hyports_2025', src: require('./hyports_2025.jpg') },
+    { name: 'cockpit_2026', src: require('./cockpit_2026.jpg') },
+    { name: 'boat_2026', src: require('./boat_2026.jpg') },
+    { name: 'rawr_2026', src: require('./rawr_2026.jpg') },
+    { name: 'bepbop_2026', src: require('./bepbop_2026.jpg') },
+    { name: 'arnaud_2026', src: require('./arnaud_2026.jpg') },
+    { name: 'rosalie_2026', src: require('./rosalie_2026.jpg') },
+    { name: 'rosalie2_2026', src: require('./rosalie2_2026.jpg') },
+    { name: 'lockin_2026', src: require('./lockin_2026.jpg') }
   ];
   
   const shuffleArray = (array) => {
@@ -41,10 +41,8 @@ const images = [
   };
   
   const shuffledImages = shuffleArray(images);
-  const sortedImages = [
-    ...shuffledImages.filter(img => !img.name.endsWith('_22')),
-    ...shuffledImages.filter(img => img.name.endsWith('_22'))
-  ];
+  const getYear = (img) => parseInt(img.name.slice(-4), 10);
+  const sortedImages = [...shuffledImages].sort((a, b) => getYear(b) - getYear(a));
   
   export default sortedImages;
   
