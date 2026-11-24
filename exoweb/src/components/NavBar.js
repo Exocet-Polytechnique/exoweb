@@ -73,7 +73,7 @@ function NavBar() {
       </a> 
       <nav className={`links ${isMenuOpen ? "open" : ""}`}>
         <Link to="/" className="page-link">{HOME}</Link>
-        <Link to="/team2026" className="page-link">{TEAM}</Link>
+        <Link to="/team2027" className="page-link">{TEAM}</Link>
         <Link to="/sponsors" className="page-link">{SPONSOR}</Link>
         <Link to="/gallery" className="page-link">{GALLERY}</Link>
         <Link to="/contact" className="page-link">{CONTACT}</Link>

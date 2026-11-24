@@ -49,6 +49,8 @@
 .picture-container {
     position: relative;
     height: 225px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .student-image {

@@ -36,11 +36,22 @@
     margin-bottom: 40px;
 }
 
+.team-2027 .student-card > div {
+    height: auto;
+    aspect-ratio: 4 / 5;
+}
+
+.team-2027 .student-image {
+    height: 100%;
+    object-fit: cover;
+}
+
 #equipeImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 520px;
+    border-radius: 16px;
 }
 @media (max-width: 500px) {
     #equipeImage {

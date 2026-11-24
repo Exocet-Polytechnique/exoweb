@@ -1,0 +1,222 @@
+{
+    "executif" : [
+        {
+            "image": "EliotFondère.jpg",
+            "name": "Eliot Fondère",
+            "title": "VP Interne et Directeur Technique"
+        },
+        {
+            "image": "Charles-ÉricLefebvre.jpg",
+            "name": "Charles-Éric Lefebvre",
+            "title": "Co-directeur Administratif"
+        },
+        {
+            "image": "TatianaRudenok.jpg",
+            "name": "Tatiana Rudenok",
+            "title": "Co-directrice Administrative"
+        },
+        {
+            "image": "LudineFranco.jpg",
+            "name": "Ludine Franco",
+            "title": "Trésorière"
+        }
+    ],
+    "meca" : [
+        {
+            "image": "ÉmileHuard.jpg",
+            "name": "Émile Huard",
+            "title": "Chef Méca"
+        },
+        {
+            "image": "ThéoVincent-Légaré.jpg",
+            "name": "Théo Vincent-Légaré",
+            "title": "Membre"
+        },
+        {
+            "image": "FélixMilette.jpg",
+            "name": "Félix Milette",
+            "title": "Membre"
+        },
+        {
+            "image": "AmineSlimani.jpg",
+            "name": "Amine Slimani",
+            "title": "Membre"
+        },
+        {
+            "image": "LeonardoLasherasGuterres.jpg",
+            "name": "Leonardo Lasheras Guterres",
+            "title": "Membre"
+        },
+        {
+            "image": "Lili-RoseAlix.jpg",
+            "name": "Lili-Rose Alix",
+            "title": "Membre"
+        },
+        {
+            "image": "JorianDucharme-Dionne.jpg",
+            "name": "Jorian Ducharme-Dionne",
+            "title": "Membre"
+        },
+        {
+            "image": "VirgileRosin.jpg",
+            "name": "Virgile Rosin",
+            "title": "Membre"
+        },
+        {
+            "image": "AntoineBornet.jpg",
+            "name": "Antoine Bornet",
+            "title": "Membre"
+        },
+        {
+            "image": "default.svg",
+            "name": "Anikei Gardner",
+            "title": "Membre"
+        },
+        {
+            "image": "default.svg",
+            "name": "Mahily Breton",
+            "title": "Membre"
+        },
+        {
+            "image": "default.svg",
+            "name": "Maxime Boucher",
+            "title": "Membre"
+        }
+    ],
+    "energie" : [
+        {
+            "image": "AudreyGingras.jpg",
+            "name": "Audrey Gingras",
+            "title": "Cheffe Énergie"
+        },
+        {
+            "image": "DorianBernard.jpg",
+            "name": "Dorian Bernard",
+            "title": "VP SST"
+        },
+        {
+            "image": "JustinTassé.jpg",
+            "name": "Justin Tassé",
+            "title": "Membre"
+        },
+        {
+            "image": "ThomasLy-Brisson.jpg",
+            "name": "Thomas Ly-Brisson",
+            "title": "Membre"
+        },
+        {
+            "image": "default.svg",
+            "name": "Tihanni Godard",
+            "title": "Membre"
+        }
+    ],
+    "embarque" : [
+        {
+            "image": "GabrielSabérian.jpg",
+            "name": "Gabriel Sabérian",
+            "title": "Chef Embarqué"
+        },
+        {
+            "image": "DiegoCampos.jpg",
+            "name": "Diego Campos",
+            "title": "VP Externe"
+        },
+        {
+            "image": "AndreiMarta.jpg",
+            "name": "Andrei Marta",
+            "title": "Membre"
+        },
+        {
+            "image": "BenoitMarché.jpg",
+            "name": "Benoit Marché",
+            "title": "Membre"
+        },
+        {
+            "image": "ClémentJevardatDeFombelle.jpg",
+            "name": "Clément Jevardat de Fombelle",
+            "title": "Membre"
+        },
+        {
+            "image": "EmmanuelleBelleau.jpg",
+            "name": "Emmanuelle Belleau",
+            "title": "Membre"
+        },
+        {
+            "image": "EwenPoncy.jpg",
+            "name": "Ewen Poncy",
+            "title": "Membre"
+        },
+        {
+            "image": "FrédéricHoude.jpg",
+            "name": "Frédéric Houde",
+            "title": "Membre"
+        },
+        {
+            "image": "GuillaumeChénier.jpg",
+            "name": "Guillaume Chénier",
+            "title": "Membre"
+        },
+        {
+            "image": "GuillaumeLavertu.jpg",
+            "name": "Guillaume Lavertu",
+            "title": "Membre"
+        },
+        {
+            "image": "JoakimBergeron.jpg",
+            "name": "Joakim Bergeron",
+            "title": "Membre"
+        },
+        {
+            "image": "OlivierValenciano.jpg",
+            "name": "Olivier Valenciano",
+            "title": "Membre"
+        },
+        {
+            "image": "Paul-AntoinePilotte.jpg",
+            "name": "Paul-Antoine Pilotte",
+            "title": "Membre"
+        },
+        {
+            "image": "SylvainArnauld.jpg",
+            "name": "Sylvain Arnauld",
+            "title": "Membre"
+        },
+        {
+            "image": "VictoriaDoe.jpg",
+            "name": "Victoria Doe",
+            "title": "Membre"
+        },
+        {
+            "image": "WilfredPoirier.jpg",
+            "name": "Wilfred Poirier",
+            "title": "Membre"
+        }
+    ],
+    "logiciel" : [
+        {
+            "image": "RosalieLamoureux.jpg",
+            "name": "Rosalie Lamoureux",
+            "title": "Cheffe Logiciel"
+        },
+        {
+            "image": "DiegoCampos.jpg",
+            "name": "Diego Campos",
+            "title": "VP Externe"
+        },
+        {
+            "image": "AndreiMarta.jpg",
+            "name": "Andrei Marta",
+            "title": "Membre"
+        },
+        {
+            "image": "FrédéricHoude.jpg",
+            "name": "Frédéric Houde",
+            "title": "Membre"
+        },
+        {
+            "image": "LéonardDuval.jpg",
+            "name": "Léonard Duval",
+            "title": "Membre"
+        }
+    ]
+}

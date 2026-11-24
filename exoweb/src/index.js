@@ -9,6 +9,7 @@ import Sponsors from './pages/sponsors';
 import Gallery from './pages/gallery';
 import Team2025 from './pages/team2025';
 import Team2026 from './pages/team2026'
+import Team2027 from './pages/team2027'
 
 const routes = [
   {
@@ -38,6 +39,10 @@ const routes = [
   {
     path: 'team2026',
     element: <Team2026 />
+  },
+  {
+    path: 'team2027',
+    element: <Team2027 />
   },
 ];
 
