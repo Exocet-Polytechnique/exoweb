@@ -8,7 +8,7 @@
     text-align: center;
     margin: 15px 20px;
     width: 170px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .student-name {
@@ -49,6 +49,15 @@
 .picture-container {
     position: relative;
     height: 225px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.picture-container:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
 }
 
 .student-image {

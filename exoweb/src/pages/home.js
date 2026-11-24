@@ -12,7 +12,7 @@ function Home() {
   const stats = [
     { number: "3", label: "Participations au Monaco Energy Boat Challenge" },
     { number: "Top 1", label: "Équipe Nord-Américaine au MEBC 2026" },
-    { number: "20+", label: "Membres actifs" },
+    { number: "30+", label: "Membres actifs" },
     { number: "2019", label: "Depuis" }
   ];
 
