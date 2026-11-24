@@ -43,7 +43,7 @@ function Team2027() {
             <p className="team-header">Équipe 2027</p>
             <img src={Equipe} alt="Équipe Complete" id="equipeImage"></img>
             {renderTeamSection("Exécutif", executif)}
-            {renderTeamSection("Équipe Méca", equipeMeca)}
+            {renderTeamSection("Équipe Mécanique", equipeMeca)}
             {renderTeamSection("Équipe Énergie", equipeEnergie)}
             {renderTeamSection("Équipe Embarqué", equipeEmbarque)}
             {renderTeamSection("Équipe Logiciel", equipeLogiciel)}
