@@ -1,147 +1,128 @@
 import React, { useState } from "react";
-import "./Form.css"; // Include the CSS import
 
-function Form() {
+const FORMSPREE_URL = "https://formspree.io/f/xeojjvrj";
 
-    const [isVisible, setIsVisible] = useState(false);
-const [formData, setFormData] = useState({
+const EMPTY_FORM = {
     prenom: "",
     nom: "",
-    email: "",
+    sujet: "",
     message: "",
-    sujet: "", // Add sujet to initial state
-  });
+    email: "",
+};
 
-  const [errors, setErrors] = useState({});
+const validateEmail = (email) =>
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email);
 
-  const handleChange = (event) => {
-    setFormData({ ...formData, [event.target.name]: event.target.value });
-    setErrors({ ...errors, [event.target.name]: "" }); // Clear error on change
-  };
+function Form() {
+    const [formData, setFormData] = useState(EMPTY_FORM);
+    const [errors, setErrors] = useState({});
+    const [isSending, setIsSending] = useState(false);
+    const [notification, setNotification] = useState(null);
 
-  const validateEmail = (email) => {
-    const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    return regex.test(email);
-  };
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+        setErrors({ ...errors, [name]: "" });
+    };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+    const validate = () => {
+        const newErrors = {};
+        if (!formData.prenom.trim()) newErrors.prenom = "Prénom est requis";
+        if (!formData.nom.trim()) newErrors.nom = "Nom est requis";
+        if (!formData.sujet.trim()) newErrors.sujet = "Sujet est requis";
+        if (!formData.message.trim()) newErrors.message = "Message est requis";
+        if (!formData.email.trim()) {
+            newErrors.email = "Courriel est requis";
+        } else if (!validateEmail(formData.email)) {
+            newErrors.email = "Format de courriel invalide";
+        }
+        return newErrors;
+    };
 
-    const validationErrors = {};
+    const showNotification = (type, text) => {
+        setNotification({ type, text });
+        setTimeout(() => setNotification(null), 3300);
+    };
 
-    if (!formData.prenom) {
-      validationErrors.prenom = "Prénom est requis";
-    }
-    if (!formData.nom) {
-      validationErrors.nom = "Nom est requis";
-    }
-    if (!formData.email) {
-      validationErrors.email = "Courriel est requis";
-    } else if (!validateEmail(formData.email)) {
-      validationErrors.email = "Format de courriel invalide";
-    }
-    if (!formData.message) {
-      validationErrors.message = "Message est requis";
-    }
-    if (!formData.sujet) { // Add validation for sujet
-      validationErrors.sujet = "Sujet est requis";
-    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    setErrors(validationErrors);
+        const validationErrors = validate();
+        setErrors(validationErrors);
+        if (Object.keys(validationErrors).length > 0) return;
 
-    if (Object.keys(validationErrors).length === 0) {
-        const url = "https://formspree.io/f/xeojjvrj"; // Replace with your endpoint URL
-        console.log("Form submitted successfully:", formData);
+        setIsSending(true);
         try {
-            const response = await fetch(url, {
-              method: "POST", // HTTP method for form submission
-              body: JSON.stringify(formData), // Send form data as JSON
-              headers: { "Content-Type": "application/json" }, // Set content type header
+            const response = await fetch(FORMSPREE_URL, {
+                method: "POST",
+                body: JSON.stringify(formData),
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
             });
-      
-            // ... handle response and errors
-          } catch (error) {
+
+            if (response.ok) {
+                showNotification("success", "Votre message a été envoyé !");
+                setFormData(EMPTY_FORM);
+            } else {
+                showNotification("error", "Erreur lors de l'envoi. Réessayez plus tard.");
+            }
+        } catch (error) {
             console.error("Error submitting form:", error);
-          }
-    
-      // Submit the form data (e.g., send to your email)
-        setIsVisible(true);
-        setTimeout(() => {
-            setIsVisible(false);
-        }, 3300);
-      setFormData({ prenom: "", nom: "", email: "", message: "", sujet: "" }); // Clear form data
-      // Implement your form submission logic here (e.g., API call)
-    }
-  };
+            showNotification("error", "Erreur réseau. Vérifiez votre connexion.");
+        } finally {
+            setIsSending(false);
+        }
+    };
 
-  return (
-    <div className="contact-form">
-      <div className="form-container">
-        <div className="form-column">
-          <input
-            type="text"
-            className="input-box"
-            name="prenom"
-            placeholder="Prénom *"
-            required
-            value={formData.prenom}
-            onChange={handleChange}
-          />
-          {errors.prenom && <p className="error-message">{errors.prenom}</p>}
-          <input
-            type="text"
-            className="input-box"
-            name="nom"
-            placeholder="Nom *"
-            required
-            value={formData.nom}
-            onChange={handleChange}
-          />
-          {errors.nom && <p className="error-message">{errors.nom}</p>}
-          <input
-            type="email"
-            className="input-box"
-            name="email"
-            placeholder="Courriel *"
-            required
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && <p className="error-message">{errors.email}</p>}
-        </div>
+    return (
+        <>
+            <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                <div className="contact-row">
+                    <div className="contact-group">
+                        <input className="contact-field" type="text" name="prenom"
+                            placeholder="Prénom*" value={formData.prenom} onChange={handleChange} />
+                        {errors.prenom && <p className="contact-error">{errors.prenom}</p>}
+                    </div>
+                    <div className="contact-group">
+                        <input className="contact-field" type="text" name="nom"
+                            placeholder="Nom*" value={formData.nom} onChange={handleChange} />
+                        {errors.nom && <p className="contact-error">{errors.nom}</p>}
+                    </div>
+                </div>
 
-        <div className="form-column">
-          <input
-            type="text"
-            className="input-box"
-            name="sujet"
-            placeholder="Sujet *"
-            required
-            value={formData.sujet}
-            onChange={handleChange}
-          />
-          {errors.sujet && <p className="error-message">{errors.sujet}</p>}  {/* Added error message for sujet */}
-          <div className="message-container">
-            <p className="message-placeholder">Message *</p>
-            <textarea
-              className="input-message"
-              name="message"
-              required
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </div>
-          {errors.message && <p className="error-message">{errors.message}</p>}
-        </div>
-      </div>
-      <button id="send-button" onClick={handleSubmit}>
-        Envoyer
-      </button>
-      <div className={`notification ${isVisible ? "show" : ""}`}>
-      <p>Votre message a été envoyé!</p>
-      </div>
-    </div>
-  );
+                <div className="contact-group">
+                    <input className="contact-field" type="text" name="sujet"
+                        placeholder="Sujet*" value={formData.sujet} onChange={handleChange} />
+                    {errors.sujet && <p className="contact-error">{errors.sujet}</p>}
+                </div>
+
+                <div className="contact-group contact-group-grow">
+                    <textarea className="contact-field" name="message"
+                        placeholder="Message*" value={formData.message} onChange={handleChange} />
+                    {errors.message && <p className="contact-error">{errors.message}</p>}
+                </div>
+
+                <div className="contact-row">
+                    <div className="contact-group">
+                        <input className="contact-field" type="email" name="email"
+                            placeholder="Adresse courriel*" value={formData.email} onChange={handleChange} />
+                        {errors.email && <p className="contact-error">{errors.email}</p>}
+                    </div>
+                    <button className="contact-button" type="submit" disabled={isSending}>
+                        {isSending ? "Envoi..." : "Envoyer"}
+                    </button>
+                </div>
+            </form>
+
+            {notification && (
+                <div className={`contact-notification ${notification.type}`}>
+                    {notification.text}
+                </div>
+            )}
+        </>
+    );
 }
 
 export default Form;
